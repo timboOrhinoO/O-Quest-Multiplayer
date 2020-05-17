@@ -1,0 +1,60 @@
+# 3d formats
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.obj filter=lfs diff=lfs merge=lfs -text
+*.abc filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
+*.usdz filter=lfs diff=lfs merge=lfs -text
+
+# image formats
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.tif filter=lfs diff=lfs merge=lfs -text
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+
+# audio files
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.mid filter=lfs diff=lfs merge=lfs -text
+
+# video files
+*.mp4
+*.mov
+*.mpeg
+
+# library/tool files added by assetstore packages
+# Databases
+*.db filter=lfs diff=lfs merge=lfs -text
+*.bc filter=lfs diff=lfs merge=lfs -text
+
+# Windows/Desktop
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+
+# ios
+*.a filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.unitypackage
+
+# TODO android
+# jar? lib?
+# TextMeshPro
+# note that this includes all files that end with SDF.asset - e.g. "My File SDF.asset"
+*SDF.asset filter=lfs diff=lfs merge=lfs -text
+
+# Unity Binary Assets
+# TODO we need to add more of these "internal fat assets that Unity creates"
+# e.g. LightingData, OcclusionCullingData, NavMeshData, ...
+OcclusionCullingData.asset filter=lfs diff=lfs merge=lfs -text
+*.terrainlayer filter=lfs diff=lfs merge=lfs -text
+
+# trick to exclude large .asset files - rename them to .lfs.asset so they get added to lfs
+*.lfs.asset filter=lfs diff=lfs merge=lfs -text
+
+# ADDITIONAL EXAMPLES
+# this is how you exclude all files of a type in a specific path
+# note that the path MUST NOT include spaces!
+development/MarsLWRP/Assets/01_Assets/20190329-mars-v04/*.jpg filter=lfs diff=lfs merge=lfs -text

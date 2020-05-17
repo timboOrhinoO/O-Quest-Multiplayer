@@ -1,0 +1,9 @@
+[submodule "development/Biolum/Assets/ProductionAssets"]
+	path = development/Biolum/Assets/ProductionAssets
+	url = https://gitlab.com/prefrontalcortex/bioluminescence/production-assets.git
+[submodule "development/Biolum/Assets/SampleAssets"]
+	path = development/Biolum/Assets/SampleAssets
+	url = https://gitlab.com/prefrontalcortex/bioluminescence/sample-assets.git
+[submodule "development/Graphics"]
+	path = development/Graphics
+	url = https://github.com/prefrontalcortex/Graphics
