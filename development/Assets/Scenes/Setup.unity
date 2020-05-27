@@ -250,7 +250,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576333547
 GameObject:
@@ -296,11 +296,19 @@ MonoBehaviour:
         x: 61
         y: 132
         width: 100
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Wait for Join Room
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Pun2.Actions.PunConnectUsingSettings
@@ -361,8 +369,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 253
-        y: 134
+        x: 245
+        y: 131
         width: 201
         height: 48
       isBreakpoint: 0
@@ -372,7 +380,7 @@ MonoBehaviour:
       - fsmEvent:
           name: CREATE ROOM
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Create Room
         linkStyle: 0
         linkConstraint: 0
@@ -380,7 +388,7 @@ MonoBehaviour:
       - fsmEvent:
           name: JOIN ROOM
           isSystemEvent: 0
-          isGlobal: 0
+          isGlobal: 1
         toState: Join Room
         linkStyle: 0
         linkConstraint: 0
@@ -419,7 +427,7 @@ MonoBehaviour:
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams:
-        - target: 0
+        - target: 4
           excludeSelf:
             useVariable: 0
             name: 
@@ -451,7 +459,7 @@ MonoBehaviour:
             networkSync: 0
             value: 0
           fsmComponent: {fileID: 0}
-        - target: 0
+        - target: 4
           excludeSelf:
             useVariable: 0
             name: 
@@ -729,12 +737,15 @@ MonoBehaviour:
         paramDataPos: 00000000000000000000000001000000000000000100000000000000010000000100000000000000
         paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000001000000
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
     - name: CREATE ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: JOIN ROOM
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: PHOTON / ON JOINED LOBBY
       isSystemEvent: 0
       isGlobal: 1
@@ -828,7 +839,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &576333550
 MonoBehaviour:
@@ -935,14 +946,14 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 8731548827421690620, guid: 2ab58e7bec450e946a0029244bd10ffb,
             type: 3}
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
         - useVariable: 1
-          name: 
+          name: LocalPlayer
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -1096,7 +1107,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: LocalPlayer
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -1104,7 +1121,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 0000000000000000
+      variableCategoryIDs: 000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -1516,7 +1533,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023699813
 GameObject:
@@ -1705,7 +1722,7 @@ RectTransform:
   - {fileID: 2138203554}
   - {fileID: 608617999}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1747,7 +1764,7 @@ MonoBehaviour:
   fsm:
     dataVersion: 2
     usedInTemplate: {fileID: 0}
-    name: FSM
+    name: GuiInteraction
     startState: State 1
     states:
     - name: State 1
@@ -2111,13 +2128,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898073766}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 456.41998, y: 155.7321, z: 0}
+  m_LocalRotation: {x: 0.4011552, y: -0, z: -0, w: 0.91601014}
+  m_LocalPosition: {x: 0, y: 17.91, z: -21.97}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 47.301003, y: 0, z: 0}
 --- !u!1001 &2076315658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2298,77 +2315,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138203553}
   m_CullTransparentMesh: 0
---- !u!1001 &8731548827717367749
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8731548827421690503, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: viewIdField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690618, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8731548827421690620, guid: 2ab58e7bec450e946a0029244bd10ffb,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2ab58e7bec450e946a0029244bd10ffb, type: 3}
