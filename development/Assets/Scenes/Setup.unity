@@ -672,15 +672,15 @@ MonoBehaviour:
         - useVariable: 1
           name: TestRoom
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: 
-        - useVariable: 1
+          value: Lobby
+        - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: Lobby
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
@@ -766,9 +766,9 @@ MonoBehaviour:
       - useVariable: 1
         name: TestRoom
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
-        value: 
+        value: Lobby
       vector2Variables: []
       vector3Variables: []
       colorVariables: []

@@ -565,7 +565,7 @@ MonoBehaviour:
           name: isMine
           isSystemEvent: 0
           isGlobal: 0
-        toState: IsMine
+        toState: Update Transform
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1105,7 +1105,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1131,8 +1131,8 @@ MonoBehaviour:
     handleJointBreak: 0
     handleJointBreak2D: 0
     handleOnGUI: 0
-    handleFixedUpdate: 1
-    handleLateUpdate: 1
+    handleFixedUpdate: 0
+    handleLateUpdate: 0
     handleApplicationEvents: 0
     handleUiEvents: 0
     handleLegacyNetworking: 0
