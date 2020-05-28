@@ -5008,8 +5008,8 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetFsmBool
         - HutongGames.PlayMaker.Actions.BoolTest
         - HutongGames.PlayMaker.Actions.BoolTest
-        - HutongGames.PlayMaker.Actions.FloatCompare
-        - HutongGames.PlayMaker.Actions.GetProperty
+        - HutongGames.PlayMaker.Actions.GetFsmFloat
+        - HutongGames.PlayMaker.Actions.GetFsmFloat
         customNames:
         - 
         - 
@@ -5019,8 +5019,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101010101
         actionIsOpen: 000000000101
-        actionStartIndex: 00000000050000000a0000000e0000001200000019000000
-        actionHashCodes: 68fece0568fece05a4c8bf00a4c8bf001bcdca045ac85204
+        actionStartIndex: 00000000050000000a0000000e0000001200000017000000
+        actionHashCodes: 68fece0568fece05a4c8bf00a4c8bf008760450287604502
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -5040,143 +5040,27 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 6767374225950563435}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 5285576563835860105}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
         fsmEventTargetParams: []
-        fsmPropertyParams:
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 6148853417701159913}
-          TargetTypeName: GetVelocity
-          PropertyName: 
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          EnumParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            enumName: 
-            intValue: 0
-          ArrayParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: 
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-          setProperty: 0
+        fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
         - useVariable: 0
@@ -5203,25 +5087,43 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: L-FistTrue
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GetVelocity
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: L-curYvelocity
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: GetVelocity
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: R-curYvelocity
         fsmObjectParams: []
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
         - useVariable: 1
-          name: curCombinedVelocity
+          name: L-curYvelocity
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: MovThreshold
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
+          name: R-curYvelocity
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -5262,15 +5164,12 @@ MonoBehaviour:
         - NotBothAreFists
         - 
         - NotBothAreFists
-        - 
-        - 
-        - Movement!
-        byteData: 010101010100
+        byteData: 010101010101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000001100000001000000140000001200000012000000110000000100000011000000170000001700000001000000110000001700000017000000010000000f0000000f0000000f000000170000001700000017000000010000002400000001000000
+        paramDataType: 1400000012000000120000001100000001000000140000001200000012000000110000000100000011000000170000001700000001000000110000001700000017000000010000001400000012000000120000000f000000010000001400000012000000120000000f00000001000000
         paramName:
         - gameObject
         - fsmName
@@ -5290,17 +5189,18 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        - float1
-        - float2
-        - tolerance
-        - equal
-        - lessThan
-        - greaterThan
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
         - everyFrame
-        - targetProperty
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
         - everyFrame
-        paramDataPos: 000000000000000001000000000000000000000001000000020000000300000001000000010000000200000000000000010000000200000003000000020000000300000003000000000000000100000002000000040000000500000006000000040000000000000005000000
-        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000001000000
+        paramDataPos: 00000000000000000100000000000000000000000100000002000000030000000100000001000000020000000000000001000000020000000300000002000000030000000300000002000000040000000500000000000000040000000300000006000000070000000100000005000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000010000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000
     - name: Movement
       description: 
       colorIndex: 5
@@ -5513,6 +5413,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: L-curYvelocity
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: MovThreshold
         tooltip: 
         showInInspector: 0
@@ -5520,6 +5426,12 @@ MonoBehaviour:
         value: 0
       - useVariable: 1
         name: curCombinedVelocity
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: R-curYvelocity
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -5552,7 +5464,7 @@ MonoBehaviour:
       enumVariables: []
       categories:
       - 
-      variableCategoryIDs: 00000000000000000000000000000000
+      variableCategoryIDs: 000000000000000000000000000000000000000000000000
     description: 
     docUrl: 
     showStateLabel: 0
@@ -5652,35 +5564,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4047858469395720656, guid: c6a74181d4000004887343fb87b3c53a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.019532572
+      objectReference: {fileID: 0}
+    - target: {fileID: 5454963625512677835, guid: c6a74181d4000004887343fb87b3c53a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6a74181d4000004887343fb87b3c53a, type: 3}
---- !u!1 &1342004362101619367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2508186398464759877, guid: c6a74181d4000004887343fb87b3c53a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3481599063477068514}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6148853417701159913 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7278945629855027467, guid: c6a74181d4000004887343fb87b3c53a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3481599063477068514}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cdb5c6b6e76d9d4eb1b38eed186c835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &3476952981345815606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4927695388962516, guid: c6a74181d4000004887343fb87b3c53a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3481599063477068514}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5258202580274756374 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8694758207512615412, guid: c6a74181d4000004887343fb87b3c53a,
     type: 3}
   m_PrefabInstance: {fileID: 3481599063477068514}
   m_PrefabAsset: {fileID: 0}
@@ -5690,9 +5588,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3481599063477068514}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5258202580274756374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8694758207512615412, guid: c6a74181d4000004887343fb87b3c53a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3481599063477068514}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8159709725559568929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4714146369724815555, guid: c6a74181d4000004887343fb87b3c53a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3481599063477068514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1342004362101619367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2508186398464759877, guid: c6a74181d4000004887343fb87b3c53a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3481599063477068514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6767374225950563435 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7907077287332871817, guid: c6a74181d4000004887343fb87b3c53a,
     type: 3}
   m_PrefabInstance: {fileID: 3481599063477068514}
   m_PrefabAsset: {fileID: 0}
@@ -5751,7 +5667,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4074069891653992254, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410245559642040101, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02237594
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410245559642040101, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410245559642040101, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0107
+      objectReference: {fileID: 0}
+    - target: {fileID: 5410245559642040101, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02131335
+      objectReference: {fileID: 0}
+    - target: {fileID: 6327806386760189442, guid: e201a24a09e942042b93390d0444d728,
+        type: 3}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmFloatParams.Array.data[1].name
+      value: R-curYvelocity
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8782212604667002017, guid: e201a24a09e942042b93390d0444d728, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e201a24a09e942042b93390d0444d728, type: 3}
 --- !u!1 &8081799864636645252 stripped
 GameObject:
@@ -5774,6 +5721,12 @@ GameObject:
 --- !u!1 &5706016499380140124 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1799061324516326569, guid: e201a24a09e942042b93390d0444d728,
+    type: 3}
+  m_PrefabInstance: {fileID: 6329909848983094517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5285576563835860105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2198452167045722236, guid: e201a24a09e942042b93390d0444d728,
     type: 3}
   m_PrefabInstance: {fileID: 6329909848983094517}
   m_PrefabAsset: {fileID: 0}
