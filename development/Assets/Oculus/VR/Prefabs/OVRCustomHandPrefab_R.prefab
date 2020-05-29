@@ -1689,7 +1689,6 @@ GameObject:
   - component: {fileID: 4766092344323370}
   - component: {fileID: 114417840974862690}
   - component: {fileID: 114460394679914766}
-  - component: {fileID: 8782212604667002017}
   m_Layer: 0
   m_Name: OVRCustomHandPrefab_R
   m_TagString: Untagged
@@ -1767,18 +1766,6 @@ MonoBehaviour:
   - {fileID: 4993161326556916}
   - {fileID: 4399338005550382}
   - {fileID: 4806080251670844}
---- !u!114 &8782212604667002017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1581749144712736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cdb5c6b6e76d9d4eb1b38eed186c835, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1583234602300474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5447,12 +5434,12 @@ PrefabInstance:
     - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0031
+      value: -0.012
       objectReference: {fileID: 0}
     - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.0108
+      value: -0.0107
       objectReference: {fileID: 0}
     - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
         type: 3}
@@ -5499,7 +5486,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02237594
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02131335
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5786150219823959657, guid: b3a2db9acfb14e344aee1ad7d3e60ae7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b3a2db9acfb14e344aee1ad7d3e60ae7, type: 3}
 --- !u!4 &5410245559642040101 stripped
 Transform:

@@ -5500,14 +5500,15 @@ PrefabInstance:
     - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.016818127
+      value: 0.019532572
       objectReference: {fileID: 0}
     - target: {fileID: 5515052734643236686, guid: b3a2db9acfb14e344aee1ad7d3e60ae7,
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.01983475
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5786150219823959657, guid: b3a2db9acfb14e344aee1ad7d3e60ae7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b3a2db9acfb14e344aee1ad7d3e60ae7, type: 3}
 --- !u!4 &4047858469395720656 stripped
 Transform:
