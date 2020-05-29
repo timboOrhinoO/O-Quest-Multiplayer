@@ -21,10 +21,14 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class OVRPlayerController : MonoBehaviour
 {
-	/// <summary>
-	/// The rate acceleration during movement.
-	/// </summary>
-	public float Acceleration = 0.1f;
+    public bool moveGesture = false;
+    public float gestureSpeed = 0f;
+    public float gestureSpeedDamp = 2f;
+
+    /// <summary>
+    /// The rate acceleration during movement.
+    /// </summary>
+    public float Acceleration = 0.1f;
 
 	/// <summary>
 	/// The rate of damping on movement.
@@ -319,12 +323,15 @@ public class OVRPlayerController : MonoBehaviour
 
 		if (EnableLinearMovement)
 		{
-			bool moveForward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
-			bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
+            
+            bool moveForward = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
+            bool moveLeft = Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
 			bool moveRight = Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
 			bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
-			bool dpad_move = false;
+           
+			bool dpad_move = false; 
+            
 
 			if (OVRInput.Get(OVRInput.Button.DpadUp))
 			{
@@ -363,7 +370,10 @@ public class OVRPlayerController : MonoBehaviour
 			ortEuler.z = ortEuler.x = 0f;
 			ort = Quaternion.Euler(ortEuler);
 
-			if (moveForward)
+            if (moveGesture)
+                MoveThrottle += ort * (transform.lossyScale.z * (gestureSpeed / gestureSpeedDamp) * moveInfluence * Vector3.forward);
+
+            if (moveForward)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
 			if (moveBack)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
