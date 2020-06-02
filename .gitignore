@@ -101,23 +101,3 @@ Ankh.NoLoad
 ~$*
 *.csproj
 *.sln
-development/FirstContact/Recordings/
-development/FirstContact/fatassets/
-development/Staging/Assets/TreeView/
-development/Biolum/Packages/Core/.npmignore
-development/Biolum/Packages/Core/package-lock.json.meta
-development/Biolum/Packages/Core/package-lock.json
-development/Staging/Assets/pfc.Analysis.Samples/
-development/Staging/.idea/*
-development/Staging/ProjectSettings/FbxExportSettings.asset
-.vscode/
-development/Biolum/.idea
-development/Staging/.idea
-development/Staging/Assets/Polybrush Data.meta
-development/Staging/Assets/Polybrush Data/
-development/Staging/ProjectSettings/Packages/com.unity.polybrush/Settings.json
-development/SteamworksSDK
-development/Biolum/Assets/BuildReports
-development/Biolum/Assets/BuildReports.meta
-development/Biolum/Assets/Polybrush Data/Color Palette.meta
-development/Biolum/Assets/Polybrush Data/Prefab Palette.meta
