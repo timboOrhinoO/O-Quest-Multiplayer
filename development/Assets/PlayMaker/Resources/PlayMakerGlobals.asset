@@ -75,3 +75,10 @@ MonoBehaviour:
   - PHOTON / ON REGION LIST RECEIVED
   - PHOTON / ON WEBRPC RESPONSE
   - PHOTON / ON PHOTON INSTANTIATE
+  - L-RingFist
+  - L-PinkyFist
+  - L-IndexFist
+  - L-MiddleFist
+  - R-IndexFist
+  - CREATE ROOM
+  - JOIN ROOM
