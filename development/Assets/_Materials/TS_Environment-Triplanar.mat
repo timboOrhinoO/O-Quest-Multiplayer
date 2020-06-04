@@ -21,29 +21,39 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_1E0BA245:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b63b0cc859cecda4b811a8017a9ce121, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_36143CDC:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 818e9cd45774f3c44885b411851fb97c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9C7768E4:
+        m_Texture: {fileID: 2800000, guid: df6efdf94ef539144843694d309e93f4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_A7EE3605:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 27ae122588a313e4c98095c36f7c0ea6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_AD7BE967:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 9e597156659579f4aa94026afe6c6254, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D55AEC62:
+        m_Texture: {fileID: 2800000, guid: c9b916eaa8901b1468120fae7cd2ce34, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_D897D300:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: b0273c5f592268d479cc9f57a96409e9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_528EFC99: 0
-    - Vector1_63EB7BA8: 0
+    - Vector1_528EFC99: 0.15
+    - Vector1_63EB7BA8: 0.07
     m_Colors:
-    - Color_4835958C: {r: 0.990566, g: 0.7814168, b: 0.5747152, a: 0}
-    - Vector4_3E864C12: {r: 1, g: 1, b: 1, a: 1}
-    - Vector4_568EDE25: {r: 1, g: 0, b: 1, a: 0}
+    - Color_4835958C: {r: 0.745283, g: 0.6345452, b: 0.56599325, a: 0}
+    - Color_DF90C12F: {r: 0.6132076, g: 0.5199248, b: 0.4830456, a: 0}
+    - Vector4_3E864C12: {r: 0.4, g: 0.53, b: 0.1, a: 1.53}
+    - Vector4_568EDE25: {r: 2.73, g: 0, b: 0.69, a: 0}
+    - Vector4_6D2797F0: {r: 0.57, g: 1, b: 0.64, a: 0.29}
