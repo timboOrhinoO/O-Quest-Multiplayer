@@ -2179,6 +2179,16 @@ PrefabInstance:
       propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[1].value
       value: 
       objectReference: {fileID: 6576221901745746017}
+    - target: {fileID: 5611926845788926493, guid: 7571e2bc869821640b44027feb12140e,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmFloatParams.Array.data[4].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611926845788926493, guid: 7571e2bc869821640b44027feb12140e,
+        type: 3}
+      propertyPath: fsm.preprocessed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5611926845788926494, guid: 7571e2bc869821640b44027feb12140e,
         type: 3}
       propertyPath: m_LocalPosition.x
