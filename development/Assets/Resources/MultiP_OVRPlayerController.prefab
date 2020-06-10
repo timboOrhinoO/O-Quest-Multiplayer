@@ -2484,7 +2484,6 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.Vector3Lerp
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.SetProperty
-        - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.GetFsmVector3
         - HutongGames.PlayMaker.Actions.GetFsmVector3
         - HutongGames.PlayMaker.Actions.SetRotation
@@ -2502,8 +2501,7 @@ MonoBehaviour:
         - Get Rotation from other Player
         - Vector3 Lerp - Pos
         - Vector3 Lerp - Rot
-        - 
-        - 
+        - Only One OVR Manager Can be Active per PC
         - Deactivate Other Players Cam
         - Get SyncPos - Head
         - Get SyncRot - Head
@@ -2517,10 +2515,10 @@ MonoBehaviour:
         - Get SyncRot - RH
         - Set Rot - RH (otherPlayer)
         - Set Pos - RH (otherPlayer)
-        actionEnabled: 00000000010101010101010101010101010101
-        actionIsOpen: 00000000000000000000000000000000000000
-        actionStartIndex: 00000000070000000f00000014000000190000001b0000001d0000001f0000002400000029000000320000003a0000003f000000440000004d000000550000005a0000005f00000068000000
-        actionHashCodes: 5552ad056ab4490406095f0406095f045ac852045ac852045ac85204bf9f3702bf9f3702979e4104f6e5be03bf9f3702bf9f3702979e4104f6e5be03bf9f3702bf9f3702979e4104f6e5be03
+        actionEnabled: 000000000101010101010101010101010101
+        actionIsOpen: 000000000000000000000000000000000000
+        actionStartIndex: 00000000070000000f00000014000000190000001b0000001d000000220000002700000030000000380000003d000000420000004b00000053000000580000005d00000066000000
+        actionHashCodes: 5552ad056ab4490406095f0406095f045ac852045ac85204bf9f3702bf9f3702979e4104f6e5be03bf9f3702bf9f3702979e4104f6e5be03bf9f3702bf9f3702979e4104f6e5be03
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -2648,141 +2646,9 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 3483315079393126932}
-          TargetTypeName: UnityEngine.GameObject
-          PropertyName: active
-          BoolParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          FloatParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          IntParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 0
-          GameObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-          StringParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: 
-          Vector2Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0}
-          Vector3Parameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0}
-          RectParamater:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value:
-              serializedVersion: 2
-              x: 0
-              y: 0
-              width: 0
-              height: 0
-          QuaternionParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {x: 0, y: 0, z: 0, w: 0}
-          ObjectParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: System.Boolean
-            value: {fileID: 0}
-          MaterialParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          TextureParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: 
-            value: {fileID: 0}
-          ColorParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {r: 0, g: 0, b: 0, a: 1}
-          EnumParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            enumName: HutongGames.PlayMaker.None
-            intValue: 0
-          ArrayParameter:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            type: -1
-            objectTypeName: UnityEngine.Object
-            floatValues: []
-            intValues: 
-            boolValues: 
-            stringValues: []
-            vector4Values: []
-            objectReferences: []
-          setProperty: 1
-        - TargetObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            typeName: UnityEngine.Object
-            value: {fileID: 6331434284712637141}
-          TargetTypeName: UnityEngine.GameObject
-          PropertyName: active
+            value: {fileID: 3599067726351844936}
+          TargetTypeName: OVRManager
+          PropertyName: enabled
           BoolParameter:
             useVariable: 0
             name: 
@@ -3424,12 +3290,12 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0, w: 0}
         stringParams: []
-        byteData: 000000000100000000010101000000010100000000010000000000010001010000000001000000000001000101000000000100000000000100
+        byteData: 0000000001000000000101010000010100000000010000000000010001010000000001000000000001000101000000000100000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000014000000230000001c0000000f0000000f0000000f00000007000000010000001c0000001c0000000f0000001c000000010000001c0000001c0000000f0000001c000000010000002400000001000000240000000100000024000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000014000000230000001c0000000f0000000f0000000f00000007000000010000001c0000001c0000000f0000001c000000010000001c0000001c0000000f0000001c00000001000000240000000100000024000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f0000000700000001000000010000001400000012000000120000001c000000010000001400000012000000120000001c0000000100000014000000230000001c0000000f0000000f0000000f000000070000000100000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
         paramName:
         - gameObject
         - vector
@@ -3460,8 +3326,6 @@ MonoBehaviour:
         - everyFrame
         - targetProperty
         - everyFrame
-        - targetProperty
-        - everyFrame
         - gameObject
         - fsmName
         - variableName
@@ -3543,8 +3407,8 @@ MonoBehaviour:
         - space
         - everyFrame
         - lateUpdate
-        paramDataPos: 000000000000000000000000010000000200000000000000040000000100000000000000010000000300000004000000050000000500000009000000020000000300000006000000040000000a000000050000000600000007000000070000000b000000000000000c000000010000000d000000020000000e000000020000000000000001000000080000000f000000030000000200000003000000090000001000000004000000010000000a00000008000000090000000a000000110000001500000016000000050000000b0000000b0000000c0000000d000000170000001b0000001c0000000600000004000000050000000c0000001d0000000700000006000000070000000d0000001e00000008000000020000000e0000000e0000000f000000100000001f0000002300000024000000090000000f00000011000000120000001300000025000000290000002a0000000a0000000800000009000000100000002b0000000b0000000a0000000b000000110000002c0000000c00000003000000120000001400000015000000160000002d00000031000000320000000d00000013000000170000001800000019000000330000003700000038000000
-        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000000000000000000000000000000000000000000000000000040000000100000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000100000000000000010000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000
+        paramDataPos: 000000000000000000000000010000000200000000000000040000000100000000000000010000000300000004000000050000000500000009000000020000000300000006000000040000000a000000050000000600000007000000070000000b000000000000000c000000010000000d000000020000000000000001000000080000000e000000030000000200000003000000090000000f00000004000000010000000a00000008000000090000000a000000100000001400000015000000050000000b0000000b0000000c0000000d000000160000001a0000001b0000000600000004000000050000000c0000001c0000000700000006000000070000000d0000001d00000008000000020000000e0000000e0000000f000000100000001e0000002200000023000000090000000f0000001100000012000000130000002400000028000000290000000a0000000800000009000000100000002a0000000b0000000a0000000b000000110000002b0000000c00000003000000120000001400000015000000160000002c00000030000000310000000d00000013000000170000001800000019000000320000003600000037000000
+        paramByteDataSize: 0000000000000000000000000000000000000000040000000100000000000000000000000000000000000000000000000000000004000000010000000000000000000000000000000000000001000000000000000000000000000000000000000100000000000000010000000000000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000400000001000000010000000000000000000000000000000000000000000000040000000100000001000000
     events:
     - name: isMine
       isSystemEvent: 0
@@ -3683,7 +3547,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -8853,12 +8717,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3481599063477068514}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3483315079393126932 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1732268206786806, guid: c6a74181d4000004887343fb87b3c53a,
-    type: 3}
-  m_PrefabInstance: {fileID: 3481599063477068514}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3476952981345815606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4927695388962516, guid: c6a74181d4000004887343fb87b3c53a,
@@ -8889,6 +8747,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Head
       objectReference: {fileID: 0}
+    - target: {fileID: 4364073789750189136, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
+      value: 
+      objectReference: {fileID: 3599067726345810850}
+    - target: {fileID: 4364073789750189136, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: fsm.variables.gameObjectVariables.Array.data[1].value
+      value: 
+      objectReference: {fileID: 3599067726345810850}
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8912,7 +8780,7 @@ PrefabInstance:
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
@@ -8922,7 +8790,7 @@ PrefabInstance:
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
@@ -8937,7 +8805,7 @@ PrefabInstance:
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
@@ -8946,15 +8814,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250a5393bf69d78438c51d92372bec9f, type: 3}
---- !u!4 &4476369154861543185 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
-    type: 3}
-  m_PrefabInstance: {fileID: 6088680494831976313}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4752544871139009940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1552396927299443437, guid: 250a5393bf69d78438c51d92372bec9f,
+    type: 3}
+  m_PrefabInstance: {fileID: 6088680494831976313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4476369154861543185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
     type: 3}
   m_PrefabInstance: {fileID: 6088680494831976313}
   m_PrefabAsset: {fileID: 0}
@@ -9030,12 +8898,6 @@ PrefabInstance:
       objectReference: {fileID: 1474404369342970233}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e201a24a09e942042b93390d0444d728, type: 3}
---- !u!1 &6331434284712637141 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1581749144712736, guid: e201a24a09e942042b93390d0444d728,
-    type: 3}
-  m_PrefabInstance: {fileID: 6329909848983094517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8081799864636645252 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2877810401990794097, guid: e201a24a09e942042b93390d0444d728,
