@@ -21,7 +21,10 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class OVRPlayerController : MonoBehaviour
 {
-    public bool moveGesture = false;
+    
+    public bool primaryIndexTrigger = false;
+    public bool secondaryIndexTrigger = false;
+    private bool moveGesture = false;
     public float gestureSpeed = 0f;
     public float gestureSpeedDamp = 2f;
 
@@ -330,10 +333,30 @@ public class OVRPlayerController : MonoBehaviour
 			bool moveBack = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
 
            
-			bool dpad_move = false; 
-            
+			bool dpad_move = false;
 
-			if (OVRInput.Get(OVRInput.Button.DpadUp))
+            // setup bools if controller indextrigger are pressed
+            primaryIndexTrigger = false;
+            secondaryIndexTrigger = false;
+            
+            if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+            {
+                primaryIndexTrigger = true;
+            }
+
+            if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
+            {
+                secondaryIndexTrigger = true;
+            }
+
+            // if both index triggers are pressed, move forward 
+            if (primaryIndexTrigger & secondaryIndexTrigger)
+            {
+                moveForward = true;
+            }
+
+
+            /*if (OVRInput.Get(OVRInput.Button.DpadUp))
 			{
 				moveForward = true;
 				dpad_move = true;
@@ -344,7 +367,7 @@ public class OVRPlayerController : MonoBehaviour
 			{
 				moveBack = true;
 				dpad_move = true;
-			}
+			}*/
 
 			MoveScale = 1.0f;
 
@@ -374,7 +397,7 @@ public class OVRPlayerController : MonoBehaviour
                 MoveThrottle += ort * (transform.lossyScale.z * (gestureSpeed / gestureSpeedDamp) * moveInfluence * Vector3.forward);
 
             if (moveForward)
-				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
+				MoveThrottle += ort * (transform.lossyScale.z * (gestureSpeed / gestureSpeedDamp) * moveInfluence * Vector3.forward);
 			if (moveBack)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
 			if (moveLeft)
