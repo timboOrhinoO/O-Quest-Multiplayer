@@ -392,7 +392,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0101
+        actionIsOpen: 0000
         actionStartIndex: 0000000005000000
         actionHashCodes: 9c5124005ac85204
         unityObjectParams: []
@@ -616,7 +616,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 0101
-        actionIsOpen: 0101
+        actionIsOpen: 0000
         actionStartIndex: 0000000005000000
         actionHashCodes: 9c5124005ac85204
         unityObjectParams: []
@@ -939,13 +939,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2337470232471282290}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.70710677}
-  m_LocalPosition: {x: 1.2154512, y: 0.032408968, z: 0.016556293}
+  m_LocalRotation: {x: 0.0754016, y: 0.7030752, z: -0.0754016, w: 0.7030751}
+  m_LocalPosition: {x: 3.6, y: 0.023, z: 0.017}
   m_LocalScale: {x: 41.390728, y: 46.29873, z: 110.79778}
   m_Children: []
   m_Father: {fileID: 6340038590000621991}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.243001, y: 90.00001, z: 0}
 --- !u!108 &8729011907036348656
 Light:
   m_ObjectHideFlags: 0
@@ -958,13 +958,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.9137255, g: 0.84382135, b: 0.57254905, a: 1}
-  m_Intensity: 1
-  m_Range: 2.5
-  m_SpotAngle: 70
-  m_InnerSpotAngle: 25
+  m_Intensity: 30
+  m_Range: 7
+  m_SpotAngle: 100
+  m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -995,7 +995,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -1035,7 +1035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6208100432035118677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06773, y: 0.18, z: 0.0025}
+  m_LocalPosition: {x: 0.06773, y: 0.0938, z: 0.0025}
   m_LocalScale: {x: 0.009025451, y: 0.021598864, z: 0.02416}
   m_Children:
   - {fileID: 7654442002948767648}
@@ -1100,8 +1100,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.608472, y: 1.4179326, z: 3.2391155}
-  m_Center: {x: 5.3042364, y: -0.26628613, z: -0.094673105}
+  m_Size: {x: 31.724995, y: 1.9817808, z: 3.2391155}
+  m_Center: {x: 15.36249, y: -0.5482102, z: -0.094673105}
 --- !u!114 &7899390885779379333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ PrefabInstance:
     - target: {fileID: 8513279548855356764, guid: c3a1642a79671b84dbfb10d3b77d1075,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.1138
       objectReference: {fileID: 0}
     - target: {fileID: 8513279548855356764, guid: c3a1642a79671b84dbfb10d3b77d1075,
         type: 3}
