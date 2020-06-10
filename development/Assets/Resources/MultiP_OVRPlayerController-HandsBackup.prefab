@@ -5932,7 +5932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0950df82e7936c84983497630bde5b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveGesture: 0
+  primaryIndexTrigger: 0
+  secondaryIndexTrigger: 0
   gestureSpeed: 0.1
   gestureSpeedDamp: 2
   Acceleration: 0.1
