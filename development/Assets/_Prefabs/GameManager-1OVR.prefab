@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5611926845788926488
+--- !u!1 &9139021020672615264
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5611926845788926494}
-  - component: {fileID: 5611926845788926495}
-  - component: {fileID: 5611926845788926493}
+  - component: {fileID: 9139021020672615270}
+  - component: {fileID: 9139021020672615271}
+  - component: {fileID: 9139021020672615269}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: GameManager-1OVR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5611926845788926494
+--- !u!4 &9139021020672615270
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611926845788926488}
+  m_GameObject: {fileID: 9139021020672615264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5611926845788926495
+--- !u!114 &9139021020672615271
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611926845788926488}
+  m_GameObject: {fileID: 9139021020672615264}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
@@ -90,7 +90,7 @@ MonoBehaviour:
             useVariable: 1
             name: UI-GO
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -201,7 +201,7 @@ MonoBehaviour:
             useVariable: 1
             name: CreateButton
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         - ownerOption: 1
@@ -209,7 +209,7 @@ MonoBehaviour:
             useVariable: 1
             name: JoinButton
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -345,7 +345,7 @@ MonoBehaviour:
             useVariable: 1
             name: UI-GO
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -485,7 +485,7 @@ MonoBehaviour:
             useVariable: 1
             name: UI-GO
             tooltip: 
-            showInInspector: 0
+            showInInspector: 1
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -621,19 +621,19 @@ MonoBehaviour:
       - useVariable: 1
         name: UI-GO
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
         name: CreateButton
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
       - useVariable: 1
         name: JoinButton
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
@@ -688,13 +688,13 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
---- !u!114 &5611926845788926493
+--- !u!114 &9139021020672615269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611926845788926488}
+  m_GameObject: {fileID: 9139021020672615264}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
@@ -773,17 +773,13 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.RandomFloat
-        - HutongGames.PlayMaker.Actions.SetVector3XYZ
         - HutongGames.PlayMaker.Pun2.Actions.PunInstantiate
         customNames:
         - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 000000
-        actionStartIndex: 000000000300000009000000
-        actionHashCodes: 2ee01704dfd72a045797fc02
+        actionEnabled: 00
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 5797fc02
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -817,43 +813,7 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: -5
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 5
-        - useVariable: 1
-          name: x&zPos-Offset
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 1
-          name: x&zPos-Offset
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 1.25
-        - useVariable: 1
-          name: x&zPos-Offset
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: 0
+        fsmFloatParams: []
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -876,39 +836,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: randomPos
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
-        - useVariable: 1
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {x: 0, y: 0, z: 0}
         fsmColorParams: []
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 0000
+        byteData: 00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 01000000
         customTypeNames:
         - HutongGames.PlayMaker.Pun2.Actions.PunActionHeader
-        paramDataType: 0f0000000f0000000f0000001c0000001c0000000f0000000f0000000f0000000100000013000000130000001c0000001c00000010000000130000002800000001000000
+        paramDataType: 13000000130000001c0000001c00000010000000130000002800000001000000
         paramName:
-        - min
-        - max
-        - storeResult
-        - vector3Variable
-        - vector3Value
-        - x
-        - y
-        - z
-        - everyFrame
         - gameObject
         - spawnPoint
         - position
@@ -917,8 +856,8 @@ MonoBehaviour:
         - storeObject
         - header
         - NetworkOperationPending
-        paramDataPos: 0000000001000000020000000000000001000000030000000400000005000000000000000000000001000000020000000300000000000000020000000000000001000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000001000000000000000100000000000000020000000000000000000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
@@ -984,7 +923,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
