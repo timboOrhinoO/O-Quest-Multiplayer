@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9139021020672615271}
   - component: {fileID: 9139021020672615269}
   m_Layer: 0
-  m_Name: GameManager-1OVR
+  m_Name: GameManage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8652634806203565640}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -773,13 +774,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.GetPosition
         - HutongGames.PlayMaker.Pun2.Actions.PunInstantiate
         customNames:
         - 
-        actionEnabled: 00
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 5797fc02
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0001
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 5552ad055797fc02
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -787,21 +790,29 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 3599067726345810850, guid: 5c6efffabb7be384081778d4bdf5986d,
+          value: {fileID: 3599067726345810850, guid: 1816418e55653e748a48cf2fec374bc4,
             type: 3}
         - useVariable: 0
           name: 
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 8924765952260525662}
         - useVariable: 1
           name: LocalPlayer
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 8924765952260525662}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -813,7 +824,25 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmIntParams:
         - useVariable: 0
           name: 
@@ -825,7 +854,13 @@ MonoBehaviour:
         fsmVector2Params: []
         fsmVector3Params:
         - useVariable: 1
-          name: randomPos
+          name: spawnPos
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
+          name: spawnPos
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -840,14 +875,21 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 00
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 01000000
         customTypeNames:
         - HutongGames.PlayMaker.Pun2.Actions.PunActionHeader
-        paramDataType: 13000000130000001c0000001c00000010000000130000002800000001000000
+        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000013000000130000001c0000001c00000010000000130000002800000001000000
         paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
         - gameObject
         - spawnPoint
         - position
@@ -856,8 +898,8 @@ MonoBehaviour:
         - storeObject
         - header
         - NetworkOperationPending
-        paramDataPos: 0000000001000000000000000100000000000000020000000000000000000000
-        paramByteDataSize: 0000000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 000000000000000000000000010000000200000000000000040000000000000001000000010000000200000000000000020000000000000005000000
+        paramByteDataSize: 000000000000000000000000000000000000000004000000010000000000000000000000000000000000000000000000000000000000000001000000
     events:
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
@@ -891,7 +933,7 @@ MonoBehaviour:
       vector2Variables: []
       vector3Variables:
       - useVariable: 1
-        name: randomPos
+        name: spawnPos
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -923,7 +965,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -958,3 +1000,84 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
+--- !u!1001 &6727629759198756720
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9139021020672615270}
+    m_Modifications:
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2776034614183866670, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+        type: 3}
+      propertyPath: m_Name
+      value: Spawn
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 37e6946d7ffa4de4e9ec458cea03424e, type: 3}
+--- !u!1 &8924765952260525662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2776034614183866670, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6727629759198756720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8652634806203565640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
+    type: 3}
+  m_PrefabInstance: {fileID: 6727629759198756720}
+  m_PrefabAsset: {fileID: 0}
