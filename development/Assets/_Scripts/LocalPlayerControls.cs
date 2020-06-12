@@ -6,7 +6,8 @@ using Photon.Realtime;
 
 public class LocalPlayerControls : MonoBehaviourPun
 {
-    Vector3 pos;
+    public Vector3 pos;
+    public Transform dir;
 
     public bool isMine = false;
 
@@ -17,11 +18,16 @@ public class LocalPlayerControls : MonoBehaviourPun
 
     public GameObject ovrCamRig;
 
+    public GameObject centerEyeAnchor;
+
     // Start is called before the first frame update
     void Start()
     {
         ovrCamRig = GameObject.Find("OVRCameraRig");
-        ovrCamRig.transform.position = pos;
+        ovrCamRig.transform.forward = pos;
+
+        centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
+        dir = centerEyeAnchor.transform;
         //pos = transform.position;
         PhotonView view = GetComponent<PhotonView>();
     }
@@ -52,7 +58,8 @@ public class LocalPlayerControls : MonoBehaviourPun
 
             if (primaryIndexTrigger & secondaryIndexTrigger)
             {
-                pos += (transform.forward * movSpeed * Time.deltaTime);
+                pos += (dir.transform.forward * movSpeed * Time.deltaTime);
+               // pos += (transform.forward * movSpeed * Time.deltaTime);
             }
 
             ovrCamRig.transform.position = pos;
