@@ -169,8 +169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4394718792331072}
   - component: {fileID: 137292928833085638}
-  - component: {fileID: 8041801243349887987}
-  - component: {fileID: 662705447187588084}
   m_Layer: 9
   m_Name: r_handMeshNode
   m_TagString: Untagged
@@ -185,8 +183,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085198246029792}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4314817122003250}
@@ -260,43 +258,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.08462605, y: -0.018837288, z: 0.013709333}
     m_Extent: {x: 0.10698363, y: 0.05242701, z: 0.07775}
   m_DirtyAABB: 0
---- !u!114 &8041801243349887987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085198246029792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 1
-  OwnershipTransfer: 0
-  ObservedComponents:
-  - {fileID: 662705447187588084}
-  viewIdField: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &662705447187588084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085198246029792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 1
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
 --- !u!1 &1085907579291034
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +947,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340743589949492}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0.5000002, y: -0.50000006, z: -0.5000001, w: 0.4999998}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -994,7 +955,7 @@ Transform:
   - {fileID: 4394718792331072}
   m_Father: {fileID: 4766092344323370}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 0, z: 630}
 --- !u!95 &95278821033363480
 Animator:
   serializedVersion: 3
@@ -1723,8 +1684,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4766092344323370}
-  - component: {fileID: 114417840974862690}
-  - component: {fileID: 114460394679914766}
+  - component: {fileID: 518907414493157908}
+  - component: {fileID: 8903247085731714468}
   m_Layer: 9
   m_Name: OVRCustomHandPrefab_R
   m_TagString: Untagged
@@ -1747,61 +1708,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114417840974862690
+--- !u!114 &518907414493157908
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581749144712736}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb7623a8f0b49cf4dbaa40aea4d4be64, type: 3}
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HandType: 1
-  _pointerPoseRoot: {fileID: 0}
---- !u!114 &114460394679914766
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+--- !u!114 &8903247085731714468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581749144712736}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 674a40251fe8ad841b18517ac5209957, type: 3}
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _skeletonType: 1
-  _updateRootPose: 0
-  _updateRootScale: 0
-  _enablePhysicsCapsules: 0
-  _customBones:
-  - {fileID: 4779998117587278}
-  - {fileID: 4867210645376640}
-  - {fileID: 4764752792678808}
-  - {fileID: 4846004260786940}
-  - {fileID: 4360771558957118}
-  - {fileID: 4636070314650120}
-  - {fileID: 4492482335422584}
-  - {fileID: 4095757401416052}
-  - {fileID: 4975455595100048}
-  - {fileID: 4969639723282940}
-  - {fileID: 4430907584103858}
-  - {fileID: 4747889433240038}
-  - {fileID: 4150668574442040}
-  - {fileID: 4658771346061256}
-  - {fileID: 4711711751280016}
-  - {fileID: 4154509707602826}
-  - {fileID: 4113251682903106}
-  - {fileID: 4147382078780322}
-  - {fileID: 4288470492801480}
-  - {fileID: 4777317802294454}
-  - {fileID: 4001605307124674}
-  - {fileID: 4993161326556916}
-  - {fileID: 4399338005550382}
-  - {fileID: 4806080251670844}
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 518907414493157908}
+  viewIdField: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1583234602300474
 GameObject:
   m_ObjectHideFlags: 0

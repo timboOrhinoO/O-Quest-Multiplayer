@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using InputTracking = UnityEngine.XR.InputTracking;
-using Node = UnityEngine.XR.XRNode;
 
-public class LocalPlayerControls : MonoBehaviourPunCallbacks
+public class LocalPlayerControls : MonoBehaviourPun
 {
-    public GameObject ovrCamRig;
-    public Transform leftHand;
-    public Transform rightHand;
-    public Camera centerEye;
     Vector3 pos;
 
     public bool isMine = false;
@@ -21,36 +15,28 @@ public class LocalPlayerControls : MonoBehaviourPunCallbacks
 
     public float movSpeed = 0.7f;
 
+    public GameObject ovrCamRig;
+
     // Start is called before the first frame update
     void Start()
     {
-        pos = transform.position;
+        ovrCamRig = GameObject.Find("OVRCameraRig");
+        ovrCamRig.transform.position = pos;
+        //pos = transform.position;
+        PhotonView view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isMine)
+        isMine = false;
+
+        PhotonView view = GetComponent<PhotonView>();
+        if (view.IsMine)
         {
-            Destroy(ovrCamRig);
-        }
-        else
-        {
-            // take care of camera when other player joins
-            if(centerEye.tag != "MainCamera")
-            {
-                centerEye.tag = "MainCamera";
-                centerEye.enabled = true;
-            }
+            isMine = true;
 
-            //take care of handPos tracking
-            leftHand.localRotation = InputTracking.GetLocalRotation(Node.LeftHand);
-            leftHand.localPosition = InputTracking.GetLocalPosition(Node.RightHand);
-
-            rightHand.localRotation = InputTracking.GetLocalRotation(Node.RightHand);
-            rightHand.localPosition = InputTracking.GetLocalPosition(Node.RightHand);
-
-            //handle pos and rot of player
+            //handle input
             primaryIndexTrigger = false;
             secondaryIndexTrigger = false;
 
@@ -69,14 +55,13 @@ public class LocalPlayerControls : MonoBehaviourPunCallbacks
                 pos += (transform.forward * movSpeed * Time.deltaTime);
             }
 
-            transform.position = pos;
+            ovrCamRig.transform.position = pos;
 
-
+            /*
             Vector3 euler = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(euler);
-            //maybe set local rot too?
             transform.localRotation = Quaternion.Euler(euler);
-            
+            */
 
 
         }
