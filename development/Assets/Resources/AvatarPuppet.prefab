@@ -825,12 +825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e74cd3da299a33047afd1d9c3631c673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos: {x: 0, y: 0, z: 0}
-  dir: {fileID: 0}
   isMine: 0
   primaryIndexTrigger: 0
   secondaryIndexTrigger: 0
-  movSpeed: 0.7
+  dir: {fileID: 0}
+  vrHeight: 1.5
+  movSpeed: 1.4
   ovrCamRig: {fileID: 0}
   centerEyeAnchor: {fileID: 0}
 --- !u!1 &3599067726345810860

@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
+using Settings = UnityEngine.XR.XRSettings;
+using Node = UnityEngine.XR.XRNode;
 
 public class LocalPlayerControls : MonoBehaviourPun
 {
-    public Vector3 pos;
-    public Transform dir;
-
     public bool isMine = false;
 
     public bool primaryIndexTrigger = false;
     public bool secondaryIndexTrigger = false;
 
+    Vector3 pos;
+    public Transform dir;
+
+    public float vrHeight = 1f;
     public float movSpeed = 0.7f;
 
     public GameObject ovrCamRig;
-
     public GameObject centerEyeAnchor;
 
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class LocalPlayerControls : MonoBehaviourPun
     {
         ovrCamRig = GameObject.Find("OVRCameraRig");
         ovrCamRig.transform.forward = pos;
+        pos.y = vrHeight;
 
         centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
         dir = centerEyeAnchor.transform;
@@ -59,6 +62,7 @@ public class LocalPlayerControls : MonoBehaviourPun
             if (primaryIndexTrigger & secondaryIndexTrigger)
             {
                 pos += (dir.transform.forward * movSpeed * Time.deltaTime);
+                pos.y = vrHeight;
                // pos += (transform.forward * movSpeed * Time.deltaTime);
             }
 
