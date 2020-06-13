@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
-using Settings = UnityEngine.XR.XRSettings;
-using Node = UnityEngine.XR.XRNode;
 
 public class LocalPlayerControls : MonoBehaviourPun
 {
@@ -16,11 +14,15 @@ public class LocalPlayerControls : MonoBehaviourPun
     Vector3 pos;
     public Transform dir;
 
+    //vrHeight has to be tracking EyeLevel
     public float vrHeight = 1f;
     public float movSpeed = 0.7f;
+    public float magnitude = 1f;
 
-    public GameObject ovrCamRig;
-    public GameObject centerEyeAnchor;
+    private GameObject ovrCamRig;
+    private GameObject centerEyeAnchor;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -31,10 +33,10 @@ public class LocalPlayerControls : MonoBehaviourPun
 
         centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
         dir = centerEyeAnchor.transform;
-        //pos = transform.position;
+
         PhotonView view = GetComponent<PhotonView>();
     }
-
+     
     // Update is called once per frame
     void Update()
     {
@@ -61,18 +63,14 @@ public class LocalPlayerControls : MonoBehaviourPun
 
             if (primaryIndexTrigger & secondaryIndexTrigger)
             {
-                pos += (dir.transform.forward * movSpeed * Time.deltaTime);
+                pos += (dir.transform.forward * movSpeed * magnitude * Time.deltaTime);
                 pos.y = vrHeight;
-               // pos += (transform.forward * movSpeed * Time.deltaTime);
+               
             }
 
             ovrCamRig.transform.position = pos;
 
-            /*
-            Vector3 euler = transform.rotation.eulerAngles;
-            transform.rotation = Quaternion.Euler(euler);
-            transform.localRotation = Quaternion.Euler(euler);
-            */
+            
 
 
         }
