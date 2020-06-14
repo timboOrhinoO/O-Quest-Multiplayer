@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 8747628562508032826}
   - component: {fileID: 1489959916959019705}
   - component: {fileID: 7177614559469406454}
-  - component: {fileID: 7321347872405973162}
   m_Layer: 0
   m_Name: AvatarPuppet
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3599067726345810850}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8432301933715313173}
@@ -81,8 +80,8 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
+        actionEnabled: 010000
+        actionIsOpen: 000000
         actionStartIndex: 000000000300000005000000
         actionHashCodes: 27fbe1035ac852045ac85204
         unityObjectParams: []
@@ -208,7 +207,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -217,7 +216,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -232,7 +231,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 7321347872405973162}
+            value: {fileID: 0}
           TargetTypeName: LocalPlayerControls
           PropertyName: magnitude
           BoolParameter:
@@ -340,7 +339,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            enumName: 
+            enumName: HutongGames.PlayMaker.None
             intValue: 0
           ArrayParameter:
             useVariable: 0
@@ -349,7 +348,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             type: -1
-            objectTypeName: 
+            objectTypeName: UnityEngine.Object
             floatValues: []
             intValues: 
             boolValues: 
@@ -955,25 +954,6 @@ MonoBehaviour:
   head: {fileID: 4476369154861543185}
   handL: {fileID: 3476952981345815606}
   handR: {fileID: 6325505530895018463}
---- !u!114 &7321347872405973162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3599067726345810850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e74cd3da299a33047afd1d9c3631c673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMine: 0
-  primaryIndexTrigger: 0
-  secondaryIndexTrigger: 0
-  dir: {fileID: 0}
-  vrHeight: 1.5
-  movSpeed: 1.5
-  magnitude: 1
 --- !u!1 &3599067726345810860
 GameObject:
   m_ObjectHideFlags: 0
