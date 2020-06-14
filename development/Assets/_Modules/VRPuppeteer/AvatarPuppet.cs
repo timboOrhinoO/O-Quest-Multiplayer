@@ -10,7 +10,8 @@ public class AvatarPuppet : MonoBehaviourPun
     void Start()
     {
         PhotonView view = GetComponent<PhotonView>();
-        if(view.IsMine){
+        if(view.IsMine)
+        {
             LocalController local = FindObjectOfType<LocalController>();
             local.remoteHead = head;
             local.remoteHandL = handL;

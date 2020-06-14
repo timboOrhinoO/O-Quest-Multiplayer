@@ -11,11 +11,11 @@ public class LocalPlayerControls : MonoBehaviourPun
     public bool primaryIndexTrigger = false;
     public bool secondaryIndexTrigger = false;
 
-    Vector3 pos;
+    public Vector3 pos;
     public Transform dir;
 
     //vrHeight has to be tracking EyeLevel
-    public float vrHeight = 1f;
+    //public float vrHeight = 1f;
     public float movSpeed = 0.7f;
     public float magnitude = 1f;
 
@@ -28,8 +28,8 @@ public class LocalPlayerControls : MonoBehaviourPun
     void Start()
     {
         ovrCamRig = GameObject.Find("OVRCameraRig");
-        ovrCamRig.transform.forward = pos;
-        pos.y = vrHeight;
+        pos = ovrCamRig.transform.position;
+        //pos.y = vrHeight;
 
         centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
         dir = centerEyeAnchor.transform;
@@ -51,6 +51,8 @@ public class LocalPlayerControls : MonoBehaviourPun
             primaryIndexTrigger = false;
             secondaryIndexTrigger = false;
 
+            pos = ovrCamRig.transform.position;
+
             if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
             {
                 primaryIndexTrigger = true;
@@ -63,12 +65,14 @@ public class LocalPlayerControls : MonoBehaviourPun
 
             if (primaryIndexTrigger & secondaryIndexTrigger)
             {
+                // Vector3.forward                
+                //pos = new Vector3(pos.x, 0, pos.z);
                 pos += (dir.transform.forward * movSpeed * magnitude * Time.deltaTime);
-                pos.y = vrHeight;
+                
                
             }
 
-            ovrCamRig.transform.position = pos;
+            
 
             
 
