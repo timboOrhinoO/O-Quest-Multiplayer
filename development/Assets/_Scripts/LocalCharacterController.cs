@@ -10,34 +10,37 @@ using Photon.Realtime;
 public class LocalCharacterController : MonoBehaviourPun
 {
     private CharacterController _controller;
+    private GameObject avatarPuppet;
 
-    [Header("Checks")]
+    [Header("Multiplayer Check")]
     public bool canvasButtonPressed = false;
     public bool isMine = false;
+
+    [Header("VR Interaction")]
     public bool primaryIndexTrigger = false;
     public bool secondaryIndexTrigger = false;
-
-    [Header("Gravity")]
-    public float Gravity = -1f;
-    private Vector3 velocity;
-
-    [Header("Movement")]
     private Vector3 move;
-    private float dir;
+    public Camera playerCam;
     public float movSpeed = 0.7f;
     public float magnitude = 1f;
 
-    private GameObject centerEyeAnchor;
-    private GameObject avatarPuppet;
+    [Header("MouseFallback")]
+    public bool noVR = false;
+    public Camera fallbackCam;
+    public float speedH = 2.0f;
+    public float speedV = 2.0f;
+    private float yaw = 0.1f;
+    private float pitch = 0.1f;
+
+    [Header("Character Settings")]
+    public float Gravity = -1f;
+    private Vector3 velocity;
+    
+    
 
     void Start()
     {
-
         _controller = GetComponent<CharacterController>();
-
-        centerEyeAnchor = GameObject.Find("CenterEyeAnchor");
-        dir = centerEyeAnchor.transform.rotation.y;
-
         canvasButtonPressed = false;
 
     }
@@ -52,20 +55,47 @@ public class LocalCharacterController : MonoBehaviourPun
 
             if (view.IsMine)
             {
+                // if needed for playmaker interaction
                 isMine = true;
 
                 //handle input
                 primaryIndexTrigger = false;
                 secondaryIndexTrigger = false;
 
+                // keeping the player grounded
                 velocity.y += Gravity * Time.deltaTime;
                 _controller.Move(velocity * Time.deltaTime);
 
+                // make sure to not glitch through ground geometry
                 if (_controller.isGrounded && velocity.y < 0)
                 {
                     velocity.y = 0f;
                 }
 
+                // noVR movement based on VR interaction
+                // W as movement along camera view direction
+                if (noVR)
+                {
+                    // moving the mouse is moving the camera
+                    // setup their parameters
+                    yaw += speedH * Input.GetAxis("Mouse X");
+                    pitch -= speedV * Input.GetAxis("Mouse Y");
+
+                    fallbackCam.transform.eulerAngles = new Vector3(pitch, yaw, 0.1f);
+                    transform.rotation = fallbackCam.transform.rotation;
+
+                    // move forward by press W
+                    // direction forward is based on fallback cam forward direction 
+                    if (Input.GetKey(KeyCode.W))
+                    {
+                        move = fallbackCam.transform.forward;
+                        _controller.Move(move * Time.deltaTime * movSpeed);
+                    }
+
+                }
+
+
+                // VR Interaction
                 // primaryIndex = leftHandIndex
                 if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
                 {
@@ -78,14 +108,13 @@ public class LocalCharacterController : MonoBehaviourPun
                     secondaryIndexTrigger = true;
                 }
 
+
                 // if both pressed - move character forward in look direction
                 if (primaryIndexTrigger && secondaryIndexTrigger)
                 {
-
-                    move = Quaternion.Euler(0, dir, 0) * move;
-                    move = new Vector3(0, 0, 1);
-
+                    move = playerCam.transform.forward;                   
                     _controller.Move(move * Time.deltaTime * movSpeed * magnitude);
+
                 }
 
             }
