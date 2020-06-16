@@ -82,3 +82,5 @@ MonoBehaviour:
   - R-IndexFist
   - CREATE ROOM
   - JOIN ROOM
+  - isVR!
+  - isNoVR!
