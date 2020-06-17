@@ -378,7 +378,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.5, z: 0}
 --- !u!114 &93590120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,15 +393,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasButtonPressed: 0
   isMine: 0
+  leftHandAnchor: {fileID: 109308}
   primaryIndexTrigger: 0
   secondaryIndexTrigger: 0
-  Gravity: -5
   playerCam: {fileID: 2037080}
   movSpeed: 1.5
   magnitude: 1
+  multiplier: 5
+  noVR: 0
+  fallbackCam: {fileID: 1399952767346521459}
   speedH: 2
   speedV: 2
-  fallbackCam: {fileID: 1399952767346521459}
+  Gravity: -5
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0

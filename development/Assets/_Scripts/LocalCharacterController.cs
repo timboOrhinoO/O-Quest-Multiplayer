@@ -15,6 +15,9 @@ public class LocalCharacterController : MonoBehaviourPun
     [Header("Multiplayer Check")]
     public bool canvasButtonPressed = false;
     public bool isMine = false;
+    public GameObject leftHandAnchor;
+    private Vector3 current;
+    private Vector3 previous;
 
     [Header("VR Interaction")]
     public bool primaryIndexTrigger = false;
@@ -23,6 +26,8 @@ public class LocalCharacterController : MonoBehaviourPun
     public Camera playerCam;
     public float movSpeed = 0.7f;
     public float magnitude = 1f;
+    public float multiplier = 5f;
+    private float stime = 0.0f;
 
     [Header("MouseFallback")]
     public bool noVR = false;
@@ -42,7 +47,6 @@ public class LocalCharacterController : MonoBehaviourPun
     {
         _controller = GetComponent<CharacterController>();
         canvasButtonPressed = false;
-
     }
 
     void Update()
@@ -65,15 +69,18 @@ public class LocalCharacterController : MonoBehaviourPun
                 // keeping the player grounded
                 velocity.y += Gravity * Time.deltaTime;
                 _controller.Move(velocity * Time.deltaTime);
+                
+                //magnitude calculation
+                magnitude = Mathf.Abs(Mathf.SmoothDamp(previous.magnitude, leftHandAnchor.transform.position.magnitude, ref stime, 0, 3) - transform.position.magnitude) * multiplier;
+                previous = leftHandAnchor.transform.position;
 
-                // make sure to not glitch through ground geometry
-                if (_controller.isGrounded && velocity.y < 0)
+                if (magnitude > movSpeed)
                 {
-                    velocity.y = 0f;
+                    magnitude = movSpeed;
                 }
 
-                // noVR movement based on VR interaction
-                // W as movement along camera view direction
+                    // noVR movement based on VR interaction
+                    // W as movement along camera view direction
                 if (noVR)
                 {
                     // moving the mouse is moving the camera
@@ -86,14 +93,21 @@ public class LocalCharacterController : MonoBehaviourPun
 
                     // move forward by press W
                     // direction forward is based on fallback cam forward direction 
-                    if (Input.GetKey(KeyCode.W))
-                    {
-                        move = fallbackCam.transform.forward;
-                        _controller.Move(move * Time.deltaTime * movSpeed);
-                    }
+                if (Input.GetKey(KeyCode.W))
+                {
+                    movSpeed = 1f;
+                    move = fallbackCam.transform.forward;
+                    _controller.Move(move * Time.deltaTime * movSpeed);
 
+                        if (Input.GetKey(KeyCode.LeftShift))
+                        {
+                            movSpeed = 2f;
+                            move = fallbackCam.transform.forward;
+                            _controller.Move(move * Time.deltaTime * movSpeed);
+                        }
                 }
 
+                }
 
                 // VR Interaction
                 // primaryIndex = leftHandIndex
@@ -112,7 +126,10 @@ public class LocalCharacterController : MonoBehaviourPun
                 // if both pressed - move character forward in look direction
                 if (primaryIndexTrigger && secondaryIndexTrigger)
                 {
-                    move = playerCam.transform.forward;                   
+
+
+                    // move character
+                    move = playerCam.transform.forward;                    
                     _controller.Move(move * Time.deltaTime * movSpeed * magnitude);
 
                 }
