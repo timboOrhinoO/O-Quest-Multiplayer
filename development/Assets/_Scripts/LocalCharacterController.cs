@@ -127,7 +127,6 @@ public class LocalCharacterController : MonoBehaviourPun
                 if (primaryIndexTrigger && secondaryIndexTrigger)
                 {
 
-
                     // move character
                     move = playerCam.transform.forward;                    
                     _controller.Move(move * Time.deltaTime * movSpeed * magnitude);

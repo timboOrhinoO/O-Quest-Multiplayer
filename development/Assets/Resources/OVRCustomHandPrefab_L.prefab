@@ -2675,7 +2675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3932688377708202144
 Transform:
   m_ObjectHideFlags: 0
@@ -2749,7 +2749,7 @@ GameObject:
   - component: {fileID: 1625760354351285276}
   - component: {fileID: 7804242752214824023}
   m_Layer: 9
-  m_Name: Quad
+  m_Name: '?'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

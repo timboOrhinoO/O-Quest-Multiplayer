@@ -397,7 +397,7 @@ MonoBehaviour:
   primaryIndexTrigger: 0
   secondaryIndexTrigger: 0
   playerCam: {fileID: 2037080}
-  movSpeed: 1.5
+  movSpeed: 2
   magnitude: 1
   multiplier: 5
   noVR: 0
@@ -763,7 +763,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 311
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
