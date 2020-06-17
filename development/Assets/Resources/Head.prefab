@@ -620,13 +620,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TriggerEvent
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 9c5124005ac85204
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000007000000
+        actionHashCodes: 9c5124005ac85204ff77a904
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -795,7 +797,13 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -803,12 +811,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - Activate
-        byteData: 0000000000
+        - Activate
+        byteData: 000000000020000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000070000001200000017000000130000002400000001000000
+        paramDataType: 14000000070000001200000017000000130000002400000001000000070000001700000011000000
         paramName:
         - gameObject
         - trigger
@@ -817,8 +826,11 @@ MonoBehaviour:
         - storeCollider
         - targetProperty
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000000000004000000
-        paramByteDataSize: 00000000040000000000000000000000000000000000000001000000
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 00000000000000000000000000000000000000000000000004000000050000000100000000000000
+        paramByteDataSize: 00000000040000000000000000000000000000000000000001000000040000000000000000000000
     - name: LightOn
       description: 
       colorIndex: 4
@@ -844,13 +856,15 @@ MonoBehaviour:
         actionNames:
         - HutongGames.PlayMaker.Actions.TriggerEvent
         - HutongGames.PlayMaker.Actions.SetProperty
+        - HutongGames.PlayMaker.Actions.GetKeyDown
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: 9c5124005ac85204
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000500000007000000
+        actionHashCodes: 9c5124005ac85204ff77a904
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -1019,7 +1033,13 @@ MonoBehaviour:
         fsmEnumParams: []
         fsmFloatParams: []
         fsmIntParams: []
-        fsmBoolParams: []
+        fsmBoolParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0
         fsmVector2Params: []
         fsmVector3Params: []
         fsmColorParams: []
@@ -1027,12 +1047,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - DeActivate
-        byteData: 0000000000
+        - DeActivate
+        byteData: 000000000020000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000070000001200000017000000130000002400000001000000
+        paramDataType: 14000000070000001200000017000000130000002400000001000000070000001700000011000000
         paramName:
         - gameObject
         - trigger
@@ -1041,8 +1062,11 @@ MonoBehaviour:
         - storeCollider
         - targetProperty
         - everyFrame
-        paramDataPos: 00000000000000000000000000000000000000000000000004000000
-        paramByteDataSize: 00000000040000000000000000000000000000000000000001000000
+        - key
+        - sendEvent
+        - storeResult
+        paramDataPos: 00000000000000000000000000000000000000000000000004000000050000000100000000000000
+        paramByteDataSize: 00000000040000000000000000000000000000000000000001000000040000000000000000000000
     events:
     - name: Activate
       isSystemEvent: 0
