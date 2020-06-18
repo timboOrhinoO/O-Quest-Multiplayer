@@ -5,7 +5,17 @@ using Photon.Pun;
 
 public class AvatarPuppet : MonoBehaviourPun
 {
-    public Transform head, handL, handR;
+    [Header("Puppettiering")]
+    public Transform head;
+    public Transform handL;
+    public Transform handR;
+
+    [Header("noVR Behaviour")]
+    public bool noVR = false;
+    public GameObject ovrHandL;
+    public GameObject ovrHandR;
+    private GameObject ovrRig;
+    private Component charControl;
 
     void Start()
     {
@@ -16,12 +26,16 @@ public class AvatarPuppet : MonoBehaviourPun
             local.remoteHead = head;
             local.remoteHandL = handL;
             local.remoteHandR = handR;
+
+            ovrRig = GameObject.Find("OVRCameraRig");
+            noVR = ovrRig.GetComponent<LocalCharacterController>().noVR;
+
+            if (noVR)
+            {
+                ovrHandL.SetActive(false);
+                ovrHandR.SetActive(false);
+            }
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
