@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 5854154959257336143}
   - component: {fileID: 7201970825238454981}
   - component: {fileID: 6016253172589716959}
+  - component: {fileID: 8072547962973356336}
   m_Layer: 0
   m_Name: Pickaxe_LOD3(Clone)
   m_TagString: Untagged
@@ -140,6 +141,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8072547962973356336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5806544146858975425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11420396, y: 0.8684917, z: 0.066647366}
+  m_Center: {x: 0.00006686897, y: -0.15782556, z: -0.000028293583}
 --- !u!1 &7229334632286506130
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +165,7 @@ GameObject:
   - component: {fileID: 7103599447669883821}
   - component: {fileID: 8197815260190128993}
   - component: {fileID: 9052472408166155679}
+  - component: {fileID: 8187210789040328654}
   m_Layer: 0
   m_Name: Pickaxe_LOD4(Clone)
   m_TagString: Untagged
@@ -219,6 +234,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8187210789040328654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7229334632286506130}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11420396, y: 0.8684917, z: 0.066647366}
+  m_Center: {x: 0.00006686897, y: -0.15782556, z: -0.000028293583}
 --- !u!1 &8451110729939712559
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +258,7 @@ GameObject:
   - component: {fileID: 3354635487339173795}
   - component: {fileID: 2981372443673919851}
   - component: {fileID: 8402606198055442866}
+  - component: {fileID: 4475886485994491523}
   m_Layer: 0
   m_Name: Pickaxe_LOD5(Clone)
   m_TagString: Untagged
@@ -298,3 +327,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4475886485994491523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8451110729939712559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11420396, y: 0.8684917, z: 0.066647366}
+  m_Center: {x: 0.00006686897, y: -0.15782556, z: -0.000028293583}

@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 6049303671335531786}
   - component: {fileID: 5129295244813104954}
   - component: {fileID: 3975203823351558107}
+  - component: {fileID: 1538044062427740650}
   m_Layer: 0
   m_Name: OilLamp_LOD4(Clone)
   m_TagString: Untagged
@@ -140,6 +141,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1538044062427740650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5803288956899318716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13472824, y: 0.06853443, z: 0.061332338}
+  m_Center: {x: 0.000089265406, y: 0.0001087226, z: 0.0000070547685}
 --- !u!1 &5876630557676197132
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,6 +165,7 @@ GameObject:
   - component: {fileID: 8668309457228893936}
   - component: {fileID: 5128306276483006782}
   - component: {fileID: 389274317355075518}
+  - component: {fileID: 5082299500212172146}
   m_Layer: 0
   m_Name: OilLamp_LOD3(Clone)
   m_TagString: Untagged
@@ -219,6 +234,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5082299500212172146
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5876630557676197132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13472824, y: 0.06853443, z: 0.061332338}
+  m_Center: {x: 0.000089265406, y: 0.0001087226, z: 0.0000070547685}
 --- !u!1 &8649155949643443558
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +258,7 @@ GameObject:
   - component: {fileID: 6802891405210685487}
   - component: {fileID: 8798775992917198876}
   - component: {fileID: 9159659538711407223}
+  - component: {fileID: 5319307651442379113}
   m_Layer: 0
   m_Name: OilLamp_LOD5(Clone)
   m_TagString: Untagged
@@ -298,3 +327,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5319307651442379113
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8649155949643443558}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.13472824, y: 0.06853443, z: 0.061332338}
+  m_Center: {x: 0.000089265406, y: 0.0001087226, z: 0.0000070547685}

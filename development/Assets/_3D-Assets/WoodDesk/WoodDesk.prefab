@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7576558905799221153}
   - component: {fileID: 8130532964102724314}
   - component: {fileID: 6944187902098824727}
+  - component: {fileID: 3184329682413637981}
   m_Layer: 0
   m_Name: WoodDesk_LOD4(Clone)
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3184329682413637981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2909743266157822438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8554637, y: 0.8320123, z: 0.7021102}
+  m_Center: {x: 0.029934052, y: 0.40867925, z: -0.0073165605}
 --- !u!1 &4132156960371340387
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +104,7 @@ GameObject:
   - component: {fileID: 5889191866889387617}
   - component: {fileID: 7444900136875966319}
   - component: {fileID: 3453467826935202602}
+  - component: {fileID: 4334450798467483045}
   m_Layer: 0
   m_Name: WoodDesk_LOD5(Clone)
   m_TagString: Untagged
@@ -158,6 +173,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &4334450798467483045
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132156960371340387}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8554637, y: 0.8320123, z: 0.7021102}
+  m_Center: {x: 0.029934052, y: 0.40867925, z: -0.0073165605}
 --- !u!1 &7227737654449351355
 GameObject:
   m_ObjectHideFlags: 0

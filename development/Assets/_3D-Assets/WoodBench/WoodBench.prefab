@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 199049588501058681}
   - component: {fileID: 8617452912393279867}
   - component: {fileID: 8654266436695551525}
+  - component: {fileID: 2823269383157637647}
   m_Layer: 0
   m_Name: WoodBench_LOD5(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &199049588501058681
 Transform:
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2823269383157637647
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539726813043947072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4430659934291067569, guid: 26ae583c551168d42a9d160c4566ea91, type: 3}
 --- !u!1 &5530923884207862917
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,12 +105,13 @@ GameObject:
   - component: {fileID: 7035191439562195999}
   - component: {fileID: 574247053757468922}
   - component: {fileID: 663150105843362815}
+  - component: {fileID: 5135368426457518017}
   m_Layer: 0
   m_Name: WoodBench_LOD4(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &7035191439562195999
 Transform:
@@ -158,6 +174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &5135368426457518017
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5530923884207862917}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4430659934291067569, guid: 26ae583c551168d42a9d160c4566ea91, type: 3}
 --- !u!1 &5949754555993681770
 GameObject:
   m_ObjectHideFlags: 0
