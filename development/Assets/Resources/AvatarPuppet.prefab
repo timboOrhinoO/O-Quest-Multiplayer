@@ -758,6 +758,41 @@ PrefabInstance:
       propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
       value: 
       objectReference: {fileID: 3599067726345810850}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0411913
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.03996404
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.65321845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.75499135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.572
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -6.5550003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047196653681042681, guid: 250a5393bf69d78438c51d92372bec9f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 81.76501
+      objectReference: {fileID: 0}
     - target: {fileID: 7665149247813488744, guid: 250a5393bf69d78438c51d92372bec9f,
         type: 3}
       propertyPath: m_LocalPosition.x
