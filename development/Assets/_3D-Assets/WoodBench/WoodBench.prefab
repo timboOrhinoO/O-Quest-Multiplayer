@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 199049588501058681}
   - component: {fileID: 8617452912393279867}
   - component: {fileID: 8654266436695551525}
-  - component: {fileID: 2823269383157637647}
+  - component: {fileID: 4837037833753852520}
   m_Layer: 0
   m_Name: WoodBench_LOD5(Clone)
   m_TagString: Untagged
@@ -80,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2823269383157637647
-MeshCollider:
+--- !u!65 &4837037833753852520
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,10 +90,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4430659934291067569, guid: 26ae583c551168d42a9d160c4566ea91, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.33250517, y: 0.47892705, z: 1.8991034}
+  m_Center: {x: -0.0017506406, y: 0.23234288, z: 0.00016835332}
 --- !u!1 &5530923884207862917
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,7 +104,7 @@ GameObject:
   - component: {fileID: 7035191439562195999}
   - component: {fileID: 574247053757468922}
   - component: {fileID: 663150105843362815}
-  - component: {fileID: 5135368426457518017}
+  - component: {fileID: 5210014688477599840}
   m_Layer: 0
   m_Name: WoodBench_LOD4(Clone)
   m_TagString: Untagged
@@ -174,8 +173,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5135368426457518017
-MeshCollider:
+--- !u!65 &5210014688477599840
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -184,10 +183,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4430659934291067569, guid: 26ae583c551168d42a9d160c4566ea91, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.33250517, y: 0.47892705, z: 1.8991034}
+  m_Center: {x: -0.0017506406, y: 0.23234288, z: 0.00016835332}
 --- !u!1 &5949754555993681770
 GameObject:
   m_ObjectHideFlags: 0

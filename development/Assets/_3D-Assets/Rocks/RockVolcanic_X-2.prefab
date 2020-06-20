@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 9018576347672931106}
   - component: {fileID: 9018576347672931105}
   - component: {fileID: 9018576347672931104}
-  - component: {fileID: 9202830079925246719}
+  - component: {fileID: 7191576912648731865}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_01_LOD5
   m_TagString: Untagged
@@ -138,7 +138,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &9202830079925246719
+--- !u!65 &7191576912648731865
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,8 +149,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1111944}
-  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20580497}
+  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1033528}
+  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20972583}
 --- !u!1 &9018576347985027153
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ GameObject:
   - component: {fileID: 9018576347985027164}
   - component: {fileID: 9018576347985027155}
   - component: {fileID: 9018576347985027154}
-  - component: {fileID: 781212185755906998}
+  - component: {fileID: 5194028684398041422}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_01_LOD4
   m_TagString: Untagged
@@ -231,7 +231,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &781212185755906998
+--- !u!65 &5194028684398041422
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,5 +242,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1111944}
-  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20580497}
+  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1033528}
+  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20972583}

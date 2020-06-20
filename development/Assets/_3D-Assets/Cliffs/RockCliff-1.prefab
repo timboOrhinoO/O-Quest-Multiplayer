@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8311974447728828255}
   - component: {fileID: 5524897564675953720}
   - component: {fileID: 4148475019801612935}
+  - component: {fileID: 6812411238110841887}
   m_Layer: 8
   m_Name: RockCliff-1_LOD4(Clone)
   m_TagString: Untagged
@@ -79,6 +80,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6812411238110841887
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561311326816206997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8937370568196062562, guid: 1af32f56cfbb6f3478caba49ec239f2e, type: 3}
 --- !u!1 &2688673361369221419
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,6 +105,7 @@ GameObject:
   - component: {fileID: 7353994155763272596}
   - component: {fileID: 1429050749737283541}
   - component: {fileID: 8291349070264873681}
+  - component: {fileID: 527420696954246151}
   m_Layer: 8
   m_Name: RockCliff-1_LOD5(Clone)
   m_TagString: Untagged
@@ -158,6 +174,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &527420696954246151
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2688673361369221419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8937370568196062562, guid: 1af32f56cfbb6f3478caba49ec239f2e, type: 3}
 --- !u!1 &4711727282965537945
 GameObject:
   m_ObjectHideFlags: 0

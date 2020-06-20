@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 4321604835663942}
   - component: {fileID: 7962836449342996607}
   - component: {fileID: 3835113583127289165}
-  - component: {fileID: 6784192910999166814}
+  - component: {fileID: 5233910301666450569}
   m_Layer: 8
   m_Name: RockCliff-2_LOD5(Clone)
   m_TagString: Untagged
@@ -136,7 +136,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6784192910999166814
+--- !u!65 &5233910301666450569
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

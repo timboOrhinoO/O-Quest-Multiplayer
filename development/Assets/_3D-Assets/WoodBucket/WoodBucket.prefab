@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2855288084243972985}
   - component: {fileID: 3158312686950892304}
   - component: {fileID: 1066716579252192794}
+  - component: {fileID: 6144653942310336621}
   m_Layer: 0
   m_Name: Aset_wood_misc_M_ubupeirfa_03_LOD4
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6144653942310336621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915280682017331988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39103565, y: 0.5400277, z: 0.43962723}
+  m_Center: {x: 0.0008222014, y: 0.26499006, z: 0.003582172}
 --- !u!1 &6659864034359663720
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,6 +160,7 @@ GameObject:
   - component: {fileID: 7866794302852479333}
   - component: {fileID: 7075448260459518249}
   - component: {fileID: 8896646653273899398}
+  - component: {fileID: 8592462851810751720}
   m_Layer: 0
   m_Name: Aset_wood_misc_M_ubupeirfa_03_LOD5
   m_TagString: Untagged
@@ -214,3 +229,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8592462851810751720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309047646208782310}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39103565, y: 0.5400277, z: 0.43962723}
+  m_Center: {x: 0.0008222014, y: 0.26499006, z: 0.003582172}
