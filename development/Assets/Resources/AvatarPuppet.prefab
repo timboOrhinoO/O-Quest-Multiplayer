@@ -711,6 +711,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2605118051424312219, guid: c6a74181d4000004887343fb87b3c53a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4851964393007854112, guid: c6a74181d4000004887343fb87b3c53a,
         type: 3}
       propertyPath: avatarPuppet
