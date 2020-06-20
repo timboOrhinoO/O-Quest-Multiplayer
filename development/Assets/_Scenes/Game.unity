@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 4cc79578c60643241a1b93725814ad93
+  m_OcclusionCullingData: {fileID: 36300000, guid: d6928cbf6d8342f4b9fbba676ad0c1e3,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -13297,7 +13298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2037080, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: far clip plane
-      value: 65
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 1399952767346521459, guid: 126d619cf4daa52469682f85c1378b4a,
         type: 3}
@@ -13312,7 +13313,7 @@ PrefabInstance:
     - target: {fileID: 1399952767346521459, guid: 126d619cf4daa52469682f85c1378b4a,
         type: 3}
       propertyPath: far clip plane
-      value: 60
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
