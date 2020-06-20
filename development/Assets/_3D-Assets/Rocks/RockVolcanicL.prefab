@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8710617652551822872}
   - component: {fileID: 8710617652551822875}
   - component: {fileID: 8710617652551822874}
-  - component: {fileID: 2598453686475928591}
+  - component: {fileID: 6779242306450556796}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_L_qegwv_LOD4(Clone)
   m_TagString: Untagged
@@ -80,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &2598453686475928591
-BoxCollider:
+--- !u!64 &6779242306450556796
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,9 +90,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.86, y: 1.9606597, z: 0.38249192}
-  m_Center: {x: 0.05168259, y: 0.7169801, z: -0.022332624}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -398755659766727037, guid: 0219203ed3d26514683d5088e427a227, type: 3}
 --- !u!1 &8710617652700059140
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +166,7 @@ GameObject:
   - component: {fileID: 8710617653747347929}
   - component: {fileID: 8710617653747347928}
   - component: {fileID: 8710617653747347931}
-  - component: {fileID: 7123029647032561307}
+  - component: {fileID: 870582180942414392}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_L_qegwv_LOD5(Clone)
   m_TagString: Untagged
@@ -234,8 +235,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7123029647032561307
-BoxCollider:
+--- !u!64 &870582180942414392
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -244,9 +245,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.86, y: 1.9606597, z: 0.38249192}
-  m_Center: {x: 0.05168259, y: 0.7169801, z: -0.022332624}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -398755659766727037, guid: 0219203ed3d26514683d5088e427a227, type: 3}
 --- !u!1 &8710617653977828350
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +260,7 @@ GameObject:
   - component: {fileID: 8710617653977828349}
   - component: {fileID: 8710617653977828348}
   - component: {fileID: 8710617653977828351}
-  - component: {fileID: 4179739797617604606}
+  - component: {fileID: 8985727343874431868}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_L_qegwv_LOD3(Clone)
   m_TagString: Untagged
@@ -327,8 +329,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4179739797617604606
-BoxCollider:
+--- !u!64 &8985727343874431868
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -337,6 +339,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.86, y: 1.9606597, z: 0.38249192}
-  m_Center: {x: 0.05168259, y: 0.7169801, z: -0.022332624}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -398755659766727037, guid: 0219203ed3d26514683d5088e427a227, type: 3}

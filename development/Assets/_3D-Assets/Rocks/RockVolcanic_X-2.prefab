@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 9018576347672931106}
   - component: {fileID: 9018576347672931105}
   - component: {fileID: 9018576347672931104}
-  - component: {fileID: 7191576912648731865}
+  - component: {fileID: 2144406206950300827}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_01_LOD5
   m_TagString: Untagged
@@ -138,8 +138,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7191576912648731865
-BoxCollider:
+--- !u!64 &2144406206950300827
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -148,9 +148,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1033528}
-  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20972583}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7148894890442380113, guid: f8c23d8978caeef4d9b5d33d904e2c41, type: 3}
 --- !u!1 &9018576347985027153
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ GameObject:
   - component: {fileID: 9018576347985027164}
   - component: {fileID: 9018576347985027155}
   - component: {fileID: 9018576347985027154}
-  - component: {fileID: 5194028684398041422}
+  - component: {fileID: 5360836769976186994}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_01_LOD4
   m_TagString: Untagged
@@ -231,8 +232,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5194028684398041422
-BoxCollider:
+--- !u!64 &5360836769976186994
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -241,6 +242,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.8063853, y: 2.7945836, z: 1.1033528}
-  m_Center: {x: 0.2602073, y: 1.2796272, z: -0.20972583}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7148894890442380113, guid: f8c23d8978caeef4d9b5d33d904e2c41, type: 3}

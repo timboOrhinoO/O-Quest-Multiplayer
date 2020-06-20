@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 4321604835663942}
   - component: {fileID: 7962836449342996607}
   - component: {fileID: 3835113583127289165}
-  - component: {fileID: 5233910301666450569}
+  - component: {fileID: 964128705260666543}
   m_Layer: 8
   m_Name: RockCliff-2_LOD5(Clone)
   m_TagString: Untagged
@@ -136,8 +136,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5233910301666450569
-BoxCollider:
+--- !u!64 &964128705260666543
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,9 +146,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.1364813, y: 2.0050266, z: 0.7913722}
-  m_Center: {x: 0.051535606, y: 0.99449766, z: 0.26735616}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3788279356276187704, guid: 27945fc3cf1343b4d98aa6ac041a8a0e, type: 3}
 --- !u!1 &7323291003323606004
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +161,7 @@ GameObject:
   - component: {fileID: 3359987904612451953}
   - component: {fileID: 7616259094850554058}
   - component: {fileID: 8032585856449778327}
-  - component: {fileID: 7982764242625140246}
+  - component: {fileID: 5641567145010074680}
   m_Layer: 8
   m_Name: RockCliff-2_LOD4(Clone)
   m_TagString: Untagged
@@ -229,8 +230,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7982764242625140246
-BoxCollider:
+--- !u!64 &5641567145010074680
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -239,6 +240,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6.1364813, y: 2.0050266, z: 0.7913722}
-  m_Center: {x: 0.051535606, y: 0.99449766, z: 0.26735616}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3788279356276187704, guid: 27945fc3cf1343b4d98aa6ac041a8a0e, type: 3}

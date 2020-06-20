@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5652595257621202182}
   - component: {fileID: 5652595257621202181}
   - component: {fileID: 5652595257621202180}
-  - component: {fileID: 3859604193544386501}
+  - component: {fileID: 5379410495380155333}
   m_Layer: 8
   m_Name: RockCliff-3_LOD4(Clone)
   m_TagString: Untagged
@@ -80,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3859604193544386501
-BoxCollider:
+--- !u!64 &5379410495380155333
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,9 +90,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.407692, y: 5.0642085, z: 2.3321867}
-  m_Center: {x: -0.22410011, y: 2.5027764, z: -0.008153915}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6778666929716855457, guid: 823c3d974574a1a4b856b97608786b37, type: 3}
 --- !u!1 &5652595257752954759
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +105,7 @@ GameObject:
   - component: {fileID: 5652595257752954762}
   - component: {fileID: 5652595257752954761}
   - component: {fileID: 5652595257752954760}
-  - component: {fileID: 7324812515988578201}
+  - component: {fileID: 9009769985694906041}
   m_Layer: 8
   m_Name: RockCliff-3_LOD5(Clone)
   m_TagString: Untagged
@@ -173,8 +174,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &7324812515988578201
-BoxCollider:
+--- !u!64 &9009769985694906041
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -183,9 +184,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 13.407692, y: 5.0642085, z: 2.3321867}
-  m_Center: {x: -0.22410011, y: 2.5027764, z: -0.008153915}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6778666929716855457, guid: 823c3d974574a1a4b856b97608786b37, type: 3}
 --- !u!1 &5652595259021255095
 GameObject:
   m_ObjectHideFlags: 0
