@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 8793583791137152796}
   - component: {fileID: 8793583791137152799}
   - component: {fileID: 8793583791137152798}
-  - component: {fileID: 1213616161058210950}
+  - component: {fileID: 7198296610479000292}
   m_Layer: 0
   m_Name: Aset_rock_volcanic_M_qhre5_LOD5(Clone)
   m_TagString: Untagged
@@ -136,8 +136,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &1213616161058210950
-BoxCollider:
+--- !u!64 &7198296610479000292
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,9 +146,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0031, y: 0.8587779, z: 1.8142335}
-  m_Center: {x: -0.09812403, y: 0.6411486, z: -0.00025582314}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9066331100259324575, guid: f482c8708627ac04cb34ab812cd52ac4, type: 3}
 --- !u!1 &8793583791868301562
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +161,7 @@ GameObject:
   - component: {fileID: 8793583791868301561}
   - component: {fileID: 8793583791868301560}
   - component: {fileID: 8793583791868301563}
-  - component: {fileID: 6809781078789988288}
+  - component: {fileID: 5246461818263524971}
   m_Layer: 0
   m_Name: Aset_rock_volcanic_M_qhre5_LOD5(Clone)
   m_TagString: Untagged
@@ -229,8 +230,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &6809781078789988288
-BoxCollider:
+--- !u!64 &5246461818263524971
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -239,6 +240,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.0031, y: 0.8587779, z: 1.8142335}
-  m_Center: {x: -0.09812403, y: 0.6411486, z: -0.00025582314}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9066331100259324575, guid: f482c8708627ac04cb34ab812cd52ac4, type: 3}

@@ -67,8 +67,7 @@ GameObject:
   - component: {fileID: 5104955357986138735}
   - component: {fileID: 5104955357986138732}
   - component: {fileID: 5104955357986138723}
-  - component: {fileID: 5104955357986138733}
-  - component: {fileID: 5104955357986138722}
+  - component: {fileID: 4593906906802592650}
   m_Layer: 8
   m_Name: VolcanicGroundCliff_LOD5(Clone)
   m_TagString: Untagged
@@ -137,8 +136,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5104955357986138733
-BoxCollider:
+--- !u!64 &4593906906802592650
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -147,22 +146,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.0125947, y: 0.48302442, z: 2.9722624}
-  m_Center: {x: -0.025220633, y: 0.20304826, z: -0.29169822}
---- !u!65 &5104955357986138722
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104955357986138720}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.623147, y: 0.4021548, z: 1.9861517}
-  m_Center: {x: -0.06716871, y: 0.64956516, z: -0.78475356}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1834367022901666587, guid: f10ed8ac20164d14d9346f507832599c, type: 3}
 --- !u!1 &5104955358695137166
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,8 +161,7 @@ GameObject:
   - component: {fileID: 5104955358695137173}
   - component: {fileID: 5104955358695137162}
   - component: {fileID: 5104955358695137161}
-  - component: {fileID: 5104955358695137163}
-  - component: {fileID: 5104955358695137160}
+  - component: {fileID: 4293439305128625906}
   m_Layer: 8
   m_Name: VolcanicGroundCliff_LOD4(Clone)
   m_TagString: Untagged
@@ -244,8 +230,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &5104955358695137163
-BoxCollider:
+--- !u!64 &4293439305128625906
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -254,19 +240,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.0125947, y: 0.48302442, z: 2.9722624}
-  m_Center: {x: -0.025220633, y: 0.20304826, z: -0.29169822}
---- !u!65 &5104955358695137160
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5104955358695137166}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.623147, y: 0.4021548, z: 1.9861517}
-  m_Center: {x: -0.06716871, y: 0.64956516, z: -0.78475356}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1834367022901666587, guid: f10ed8ac20164d14d9346f507832599c, type: 3}

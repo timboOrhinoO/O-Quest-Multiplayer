@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5214683043703598483}
   - component: {fileID: 5214683043703598482}
   - component: {fileID: 5214683043703598481}
-  - component: {fileID: 9182425808946747474}
+  - component: {fileID: 4829908134605102009}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_00_LOD5
   m_TagString: Untagged
@@ -80,8 +80,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &9182425808946747474
-BoxCollider:
+--- !u!64 &4829908134605102009
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -90,9 +90,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0225582, y: 2.4806547, z: 2.0432012}
-  m_Center: {x: 3.0971017, y: 1.1921635, z: -0.13834524}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1594285806328032257, guid: f8c23d8978caeef4d9b5d33d904e2c41, type: 3}
 --- !u!1 &5214683045058828649
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +105,7 @@ GameObject:
   - component: {fileID: 5214683045058828644}
   - component: {fileID: 5214683045058828651}
   - component: {fileID: 5214683045058828650}
-  - component: {fileID: 9023458335701480189}
+  - component: {fileID: 7074441412563006827}
   m_Layer: 8
   m_Name: Aset_rock_volcanic_E_qjycI_00_LOD4
   m_TagString: Untagged
@@ -173,8 +174,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &9023458335701480189
-BoxCollider:
+--- !u!64 &7074441412563006827
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -183,9 +184,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.0225582, y: 2.4806547, z: 2.0432012}
-  m_Center: {x: 3.0971017, y: 1.1921635, z: -0.13834524}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1594285806328032257, guid: f8c23d8978caeef4d9b5d33d904e2c41, type: 3}
 --- !u!1 &5214683045152325076
 GameObject:
   m_ObjectHideFlags: 0
