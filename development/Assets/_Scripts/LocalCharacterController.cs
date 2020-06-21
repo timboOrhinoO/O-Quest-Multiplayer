@@ -12,6 +12,8 @@ public class LocalCharacterController : MonoBehaviourPun
     private CharacterController _controller;
     private GameObject avatarPuppet;
 
+    public bool isMoving = false;
+
     [Header("Multiplayer Check")]
     public bool canvasButtonPressed = false;
     public bool isMine = false;
@@ -59,6 +61,9 @@ public class LocalCharacterController : MonoBehaviourPun
 
             if (view.IsMine)
             {
+                // triggers audio footsteps while moving
+                isMoving = false;
+
                 // if needed for playmaker interaction
                 isMine = true;
 
@@ -95,9 +100,10 @@ public class LocalCharacterController : MonoBehaviourPun
                     // direction forward is based on fallback cam forward direction 
                 if (Input.GetKey(KeyCode.W))
                 {
-                    movSpeed = 1f;
-                    move = fallbackCam.transform.forward;
-                    _controller.Move(move * Time.deltaTime * movSpeed);
+                        isMoving = true;
+                        movSpeed = 1f;
+                        move = fallbackCam.transform.forward;
+                        _controller.Move(move * Time.deltaTime * movSpeed);
 
                         if (Input.GetKey(KeyCode.LeftShift))
                         {
@@ -106,6 +112,30 @@ public class LocalCharacterController : MonoBehaviourPun
                             _controller.Move(move * Time.deltaTime * movSpeed);
                         }
                 }
+
+                if (Input.GetKey(KeyCode.S))
+                    {
+                        isMoving = true;
+                        movSpeed = 1f;
+                        move = -fallbackCam.transform.forward;
+                        _controller.Move(move * Time.deltaTime * movSpeed);
+                    }
+
+                if (Input.GetKey(KeyCode.A))
+                    {
+                        isMoving = true;
+                        movSpeed = 1f;
+                        move = -fallbackCam.transform.right;
+                        _controller.Move(move * Time.deltaTime * movSpeed);
+                    }
+
+                    if (Input.GetKey(KeyCode.D))
+                    {
+                        isMoving = true;
+                        movSpeed = 1f;
+                        move = fallbackCam.transform.right;
+                        _controller.Move(move * Time.deltaTime * movSpeed);
+                    }
 
                 }
 
@@ -126,6 +156,7 @@ public class LocalCharacterController : MonoBehaviourPun
                 // if both pressed - move character forward in look direction
                 if (primaryIndexTrigger && secondaryIndexTrigger)
                 {
+                    isMoving = true;
 
                     // move character
                     move = playerCam.transform.forward;                    
