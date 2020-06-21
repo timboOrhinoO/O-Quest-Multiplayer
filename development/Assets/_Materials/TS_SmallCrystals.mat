@@ -86,7 +86,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_528EFC99: 0
-    - Vector1_63EB7BA8: 0.65
+    - Vector1_63EB7BA8: 0.75
     - Vector1_E591BF46: 0.2
     - _AlphaClip: 0
     - _Blend: 0
@@ -112,14 +112,14 @@ Material:
     m_Colors:
     - Color_4835958C: {r: 0.5471698, g: 0.41719452, b: 0.25551796, a: 0}
     - Color_DF90C12F: {r: 0, g: 0, b: 0, a: 0}
-    - Vector4_2DD6DED: {r: 4.5, g: 0.15, b: 0, a: 0}
+    - Vector4_2DD6DED: {r: 2.77, g: 0.15, b: 0, a: 0}
     - Vector4_3E864C12: {r: 0.52, g: -0.22, b: 2.5, a: -0.49}
     - Vector4_568EDE25: {r: 0.5, g: 0, b: 0.76, a: 0}
     - Vector4_62B4B073: {r: 1.5, g: 0.03, b: 0.06, a: 0}
     - Vector4_6C9F0133: {r: 0.2, g: 0.2, b: 0.2, a: 0}
     - Vector4_6D2797F0: {r: 2.79, g: 1, b: 0.85, a: 0.15}
     - Vector4_986636D0: {r: 3, g: 2, b: 0, a: 0}
-    - Vector4_AE6D8384: {r: 0.7, g: 0.27, b: 0.04, a: 0}
+    - Vector4_AE6D8384: {r: 0.7, g: 0.27, b: 0, a: 0}
     - Vector4_DAA16525: {r: 0.2, g: 0.2, b: 0.2, a: 0}
     - Vector4_EEEAB30B: {r: 0.5, g: 0.5, b: 1, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
