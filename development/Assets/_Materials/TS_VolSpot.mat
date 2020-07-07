@@ -39,5 +39,5 @@ Material:
     - Vector4_B24F0299: {r: 0.06, g: 0.22, b: 0.05, a: 0}
     - Vector4_BB326E8: {r: 0.56, g: 15, b: -0.05, a: 0}
     - _Blend: {r: 0.57, g: -0.09, b: 0.02, a: 0}
-    - _gnParams: {r: 0.56, g: 15, b: -0.05, a: 0}
+    - _gnParams: {r: 1.5, g: 0.03, b: 0, a: 0}
     - _localParams: {r: 0.06, g: 0.22, b: 0.05, a: 0}
