@@ -59,7 +59,7 @@ Material:
     m_Floats:
     - Vector1_528EFC99: 0.05
     - Vector1_63EB7BA8: 0.2
-    - Vector1_E591BF46: 0.1
+    - Vector1_E591BF46: 0.09
     m_Colors:
     - Color_4835958C: {r: 1, g: 0.93853104, b: 0.8066038, a: 0}
     - Color_DF90C12F: {r: 0.6132076, g: 0.5199248, b: 0.4830456, a: 0}
