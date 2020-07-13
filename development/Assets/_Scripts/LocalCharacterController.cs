@@ -21,6 +21,13 @@ public class LocalCharacterController : MonoBehaviourPun
     private Vector3 current;
     private Vector3 previous;
 
+    [Header("Hand Animator")]
+    public GameObject leftHand;
+    private Animator lhAnim;
+    public GameObject rightHand;
+    private Animator rhAnim;
+    public string animatorBoolName;
+
     [Header("VR Interaction")]
     public bool primaryIndexTrigger = false;
     public bool secondaryIndexTrigger = false;
@@ -49,6 +56,8 @@ public class LocalCharacterController : MonoBehaviourPun
     {
         _controller = GetComponent<CharacterController>();
         canvasButtonPressed = false;
+
+        
     }
 
     void Update()
@@ -78,6 +87,16 @@ public class LocalCharacterController : MonoBehaviourPun
                 //magnitude calculation
                 magnitude = Mathf.Abs(Mathf.SmoothDamp(previous.magnitude, leftHandAnchor.transform.position.magnitude, ref stime, 0, 3) - transform.position.magnitude) * multiplier;
                 previous = leftHandAnchor.transform.position;
+
+                // find the hand animators
+                leftHand = GameObject.Find("OculusHand_L");
+                rightHand = GameObject.Find("OculusHand_R");
+                // resets the Hand Animators
+                lhAnim = leftHand.GetComponent<Animator>();
+                lhAnim.SetBool("IsFist", false);
+                rhAnim = rightHand.GetComponent<Animator>();
+                rhAnim.SetBool("IsFist", false);
+
 
                 if (magnitude > movSpeed)
                 {
@@ -144,12 +163,20 @@ public class LocalCharacterController : MonoBehaviourPun
                 if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
                 {
                     primaryIndexTrigger = true;
+
+                    lhAnim = leftHand.GetComponent<Animator>();
+                    lhAnim.SetBool(animatorBoolName, true);
+
                 }
 
                 // secondaryIndex =rightHandIndex
                 if (OVRInput.Get(OVRInput.Button.SecondaryIndexTrigger))
                 {
                     secondaryIndexTrigger = true;
+
+                    rhAnim = rightHand.GetComponent<Animator>();
+                    rhAnim.SetBool(animatorBoolName, true);
+
                 }
 
 
