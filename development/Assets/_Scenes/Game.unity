@@ -1265,6 +1265,81 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 10904084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &13271092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1161558545}
+    m_Modifications:
+    - target: {fileID: 610305432016634508, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_Name
+      value: modelBonfire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.131
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1455893
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.234
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d60ec2ab17252904a937403c294e5ad9, type: 3}
+--- !u!4 &13271093 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4477532776681255071, guid: d60ec2ab17252904a937403c294e5ad9,
+    type: 3}
+  m_PrefabInstance: {fileID: 13271092}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &33976507 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2947472414271111758, guid: 576a7fe4723664243bf9e65eb58c3deb,
@@ -4457,7 +4532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &213660588
 Light:
   m_ObjectHideFlags: 0
@@ -10618,7 +10693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &390125673
 Light:
   m_ObjectHideFlags: 0
@@ -35888,6 +35963,7 @@ Transform:
   - {fileID: 857752007}
   - {fileID: 1363564346}
   - {fileID: 1151608079}
+  - {fileID: 13271093}
   m_Father: {fileID: 1169153978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -43323,7 +43399,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1362818805
 Light:
   m_ObjectHideFlags: 0
@@ -70860,12 +70936,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2128547009}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2134851688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2776034614183866670, guid: 37e6946d7ffa4de4e9ec458cea03424e,
-    type: 3}
-  m_PrefabInstance: {fileID: 6727629760783568903}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2134851691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2686680972582369592, guid: 37e6946d7ffa4de4e9ec458cea03424e,
@@ -74238,7 +74308,8 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.GetPosition
+        - HutongGames.PlayMaker.Actions.RandomFloat
+        - HutongGames.PlayMaker.Actions.SetVector3XYZ
         - HutongGames.PlayMaker.Pun2.Actions.PunInstantiate
         - HutongGames.PlayMaker.Actions.SetProperty
         - HutongGames.PlayMaker.Actions.ActivateGameObject
@@ -74247,10 +74318,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101
-        actionIsOpen: 00000101
-        actionStartIndex: 00000000070000000f00000011000000
-        actionHashCodes: 5552ad055797fc025ac85204b2cf1000
+        - 
+        actionEnabled: 0101010101
+        actionIsOpen: 0101010101
+        actionStartIndex: 0000000003000000090000001100000013000000
+        actionHashCodes: 2ee01704dfd72a045797fc025ac85204b2cf1000
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -74265,7 +74337,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 2134851688}
+          value: {fileID: 1169153977}
         - useVariable: 1
           name: LocalPlayer
           tooltip: 
@@ -74273,14 +74345,6 @@ MonoBehaviour:
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 2134851688}
         - ownerOption: 1
           gameObject:
             useVariable: 0
@@ -74433,20 +74497,38 @@ MonoBehaviour:
         fsmArrayParams: []
         fsmEnumParams: []
         fsmFloatParams:
-        - useVariable: 1
+        - useVariable: 0
           name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: -3
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 3
+        - useVariable: 1
+          name: x&zPos-Offset
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
         - useVariable: 1
-          name: 
+          name: x&zPos-Offset
           tooltip: 
           showInInspector: 0
           networkSync: 0
           value: 0
-        - useVariable: 1
+        - useVariable: 0
           name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 2
+        - useVariable: 1
+          name: x&zPos-Offset
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -74480,6 +74562,12 @@ MonoBehaviour:
           networkSync: 0
           value: {x: 0, y: 0, z: 0}
         - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {x: 0, y: 0, z: 0}
+        - useVariable: 1
           name: spawnPos
           tooltip: 
           showInInspector: 0
@@ -74495,20 +74583,22 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 000000000000000000
+        byteData: 0000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 01000000
         customTypeNames:
         - HutongGames.PlayMaker.Pun2.Actions.PunActionHeader
-        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000013000000130000001c0000001c0000001000000013000000280000000100000024000000010000001400000011000000110000000100000001000000
+        paramDataType: 0f0000000f0000000f0000001c0000001c0000000f0000000f0000000f0000000100000013000000130000001c0000001c0000001000000013000000280000000100000024000000010000001400000011000000110000000100000001000000
         paramName:
-        - gameObject
-        - vector
+        - min
+        - max
+        - storeResult
+        - vector3Variable
+        - vector3Value
         - x
         - y
         - z
-        - space
         - everyFrame
         - gameObject
         - spawnPoint
@@ -74525,8 +74615,8 @@ MonoBehaviour:
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 00000000000000000000000001000000020000000000000004000000000000000100000001000000020000000000000002000000000000000500000000000000060000000100000000000000010000000700000008000000
-        paramByteDataSize: 00000000000000000000000000000000000000000400000001000000000000000000000000000000000000000000000000000000000000000100000000000000010000000000000000000000000000000100000001000000
+        paramDataPos: 000000000100000002000000000000000100000003000000040000000500000000000000000000000100000002000000030000000000000002000000000000000100000000000000020000000000000000000000010000000300000004000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000010000000000000000000000000000000100000001000000
     events:
     - name: PHOTON / ON JOINED ROOM
       isSystemEvent: 0
