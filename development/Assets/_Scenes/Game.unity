@@ -99,7 +99,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: da6cc56e88494ff44b2b31071441dc95,
+  m_LightingDataAsset: {fileID: 112000000, guid: 0e64c80c3c8ec364baf2e44331aa55bb,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -4532,7 +4532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &213660588
 Light:
   m_ObjectHideFlags: 0
@@ -10693,7 +10693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &390125673
 Light:
   m_ObjectHideFlags: 0
@@ -34545,6 +34545,7 @@ GameObject:
   - component: {fileID: 1023699816}
   - component: {fileID: 1023699815}
   - component: {fileID: 1023699814}
+  - component: {fileID: 1023699818}
   m_Layer: 0
   m_Name: LobbyPlane
   m_TagString: Untagged
@@ -34626,6 +34627,33 @@ Transform:
   m_Father: {fileID: 485115443}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1023699818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023699813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 571a54a848ada064b841363437ce5275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRenderer: {fileID: 1023699815}
+  V4Name: 
+  V4Value: {x: 0, y: 0, z: 0, w: 0}
+  V4Name2: 
+  V4Value2: {x: 0, y: 0, z: 0, w: 0}
+  V4Name3: 
+  V4Value3: {x: 0, y: 0, z: 0, w: 0}
+  FloatName: Vector1_E591BF46
+  FloatValue: 1.1
+  FloatName2: 
+  FloatValue2: 0
+  FloatName3: 
+  FloatValue3: 0
+  FloatName4: 
+  FloatValue4: 0
 --- !u!1 &1031122484
 GameObject:
   m_ObjectHideFlags: 0
@@ -43360,7 +43388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1362818805
 Light:
   m_ObjectHideFlags: 0
