@@ -88,14 +88,7 @@ public class LocalCharacterController : MonoBehaviourPun
                 magnitude = Mathf.Abs(Mathf.SmoothDamp(previous.magnitude, leftHandAnchor.transform.position.magnitude, ref stime, 0, 3) - transform.position.magnitude) * multiplier;
                 previous = leftHandAnchor.transform.position;
 
-                // find the hand animators
-                leftHand = GameObject.Find("OculusHand_L");
-                rightHand = GameObject.Find("OculusHand_R");
-                // resets the Hand Animators
-                lhAnim = leftHand.GetComponent<Animator>();
-                lhAnim.SetBool("IsFist", false);
-                rhAnim = rightHand.GetComponent<Animator>();
-                rhAnim.SetBool("IsFist", false);
+                
 
 
                 if (magnitude > movSpeed)
@@ -114,6 +107,8 @@ public class LocalCharacterController : MonoBehaviourPun
 
                     fallbackCam.transform.eulerAngles = new Vector3(pitch, yaw, 0.1f);
                     transform.rotation = fallbackCam.transform.rotation;
+
+                    
 
                     // move forward by press W
                     // direction forward is based on fallback cam forward direction 
@@ -157,6 +152,17 @@ public class LocalCharacterController : MonoBehaviourPun
                     }
 
                 }
+                else
+                {
+                    // find the hand animators
+                    leftHand = GameObject.Find("OculusHand_L");
+                    rightHand = GameObject.Find("OculusHand_R");
+                    // resets the Hand Animators
+                    lhAnim = leftHand.GetComponent<Animator>();
+                    lhAnim.SetBool("IsFist", false);
+                    rhAnim = rightHand.GetComponent<Animator>();
+                    rhAnim.SetBool("IsFist", false);
+                }
 
                 // VR Interaction
                 // primaryIndex = leftHandIndex
@@ -176,9 +182,7 @@ public class LocalCharacterController : MonoBehaviourPun
 
                     rhAnim = rightHand.GetComponent<Animator>();
                     rhAnim.SetBool(animatorBoolName, true);
-
                 }
-
 
                 // if both pressed - move character forward in look direction
                 if (primaryIndexTrigger && secondaryIndexTrigger)
